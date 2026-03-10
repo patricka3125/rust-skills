@@ -19,7 +19,7 @@ Heavy-weight security and safety audit using os-checker tools.
 ## When to Use
 
 |------|------|
-|**unsafe **| `/audit safety` |
+| **unsafe ** | `/audit safety` |
 
 ## Audit Modes
 
@@ -27,8 +27,8 @@ Heavy-weight security and safety audit using os-checker tools.
 
 
 |------|----------|
-| `cargo audit` |CVE|
-| `geiger` |unsafe|
+| `cargo audit` | CVE |
+| `geiger` | unsafe |
 
 ```bash
 cargo audit
@@ -41,8 +41,8 @@ unsafe
 
 |------|----------|
 | `miri` | Undefined Behavior |
-| `rudra` | |
-| `geiger` |unsafe|
+| `rudra` |  |
+| `geiger` | unsafe |
 
 ```bash
 cargo +nightly miri test
@@ -55,8 +55,8 @@ cargo +nightly miri test
 
 
 |------|----------|
-| `lockbud` | |
-| `atomvchecker` | |
+| `lockbud` |  |
+| `atomvchecker` |  |
 
 ### Full
 
@@ -65,20 +65,20 @@ cargo +nightly miri test
 
 skills
 
-| Skill | |
+| Skill |  |
 |-------|------|
-| `os-checker-checkers` | |
-| `os-checker-cli` |os-checker|
-| `os-checker-diagnostics` | |
-| `os-checker-setup` | |
+| `os-checker-checkers` |  |
+| `os-checker-cli` | os-checker |
+| `os-checker-diagnostics` |  |
+| `os-checker-setup` |  |
 
 ## Issue Prioritization
 
 |--------|----------|------|
-| Critical | `Miri`, `Rudra`, `Audit`, `Cargo` | |
-| High | `Lockbud(Probably)`, `Semver Violation` | |
-| Medium | `Lockbud(Possibly)`, `Atomvchecker` | |
-| Low | `Geiger`, `Outdated` | |
+| Critical | `Miri`, `Rudra`, `Audit`, `Cargo` |  |
+| High | `Lockbud(Probably)`, `Semver Violation` |  |
+| Medium | `Lockbud(Possibly)`, `Atomvchecker` |  |
+| Low | `Geiger`, `Outdated` |  |
 
 ## Example Output
 

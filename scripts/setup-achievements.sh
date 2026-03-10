@@ -25,7 +25,7 @@ RUST_SKILLS_DIR="${1:-$(dirname "$SCRIPT_DIR")}"
 if [ ! -f "$RUST_SKILLS_DIR/scripts/achievement-tracker.sh" ]; then
   echo -e "${RED}Error: Cannot find achievement-tracker.sh${NC}"
   echo "Expected at: $RUST_SKILLS_DIR/scripts/achievement-tracker.sh"
-  echo ""
+ echo
   echo "Usage: $0 [path-to-rust-skills]"
   exit 1
 fi
@@ -36,13 +36,13 @@ mkdir -p ~/.claude/achievements
 echo -e "${GREEN}  ✓ Created ~/.claude/hooks${NC}"
 echo -e "${GREEN}  ✓ Created ~/.claude/achievements${NC}"
 
-echo ""
+echo
 echo -e "${YELLOW}Step 2: Installing achievement tracker...${NC}"
 cp "$RUST_SKILLS_DIR/scripts/achievement-tracker.sh" ~/.claude/hooks/
 chmod +x ~/.claude/hooks/achievement-tracker.sh
 echo -e "${GREEN}  ✓ Installed achievement-tracker.sh${NC}"
 
-echo ""
+echo
 echo -e "${YELLOW}Step 3: Initializing data files...${NC}"
 
 # Initialize stats file
@@ -61,9 +61,9 @@ if [ ! -f ~/.claude/achievements/stats.json ]; then
   "total_sessions": 0,
   "rust_questions": 0,
   "skills_used": 0,
-  "last_date": "",
-  "last_unsafe_date": "",
-  "first_session_date": ""
+ "last_date": ,
+ "last_unsafe_date": ,
+ "first_session_date":
 }
 EOF
   echo -e "${GREEN}  ✓ Created stats.json${NC}"
@@ -79,16 +79,16 @@ else
   echo -e "${BLUE}  ℹ unlocked.json already exists (keeping existing data)${NC}"
 fi
 
-echo ""
+echo
 echo -e "${GREEN}╔═══════════════════════════════════════════╗${NC}"
 echo -e "${GREEN}║   ✅ Installation Complete!               ║${NC}"
 echo -e "${GREEN}╚═══════════════════════════════════════════╝${NC}"
 
-echo ""
+echo
 echo -e "${YELLOW}Next Step: Configure Claude Code Hooks${NC}"
-echo ""
+echo
 echo "Add this to your ~/.claude/settings.json:"
-echo ""
+echo
 echo -e "${BLUE}{"
 echo '  "hooks": {'
 echo '    "PostToolUse": ['
@@ -115,11 +115,11 @@ echo '    ]'
 echo '  }'
 echo -e "}${NC}"
 
-echo ""
+echo
 echo -e "${YELLOW}Quick Test:${NC}"
 echo "  ~/.claude/hooks/achievement-tracker.sh UserPromptSubmit"
-echo ""
+echo
 echo -e "${YELLOW}View Achievements:${NC}"
 echo "  /achievement"
-echo ""
+echo
 echo -e "🎮 ${GREEN}Start coding to earn achievements!${NC}"

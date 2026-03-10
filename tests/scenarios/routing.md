@@ -131,22 +131,3 @@
 **Expected Route:** m03-mutability
 
 ---
-
-## Chinese Trigger Tests
-
-### Test 18: Chinese Ownership Query
-**Expected Route:** m01-ownership
-**Verification:**
-- [ ] Correct skill triggered
-- [ ] Response can be in Chinese
-
-### Test 19: Chinese Version Query
-**Prompt:** "Rust "
-**Expected Route:** rust-learner
-**Verification:**
-- [ ] Uses agents, not WebSearch
-
-### Test 20: Chinese Error Query
-**Expected Route:** m01-ownership
-**Verification:**
-- [ ] Borrow checker help provided

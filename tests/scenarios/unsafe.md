@@ -31,7 +31,6 @@
 ## Content Accuracy Tests
 
 ### Test 4: SAFETY Comment Check
-**Prompt:**
 ```rust
 unsafe {
     ptr.read()
@@ -45,7 +44,6 @@ What's wrong with this code?
 - [ ] Example of proper comment
 
 ### Test 5: Transmute Review
-**Prompt:**
 ```rust
 let x: u32 = 42;
 let y: f32 = unsafe { std::mem::transmute(x) };
@@ -57,7 +55,6 @@ let y: f32 = unsafe { std::mem::transmute(x) };
 - [ ] Warning about safer alternatives
 
 ### Test 6: FFI Panic Safety
-**Prompt:**
 ```rust
 #[no_mangle]
 pub extern "C" fn callback(x: i32) -> i32 {
@@ -111,7 +108,6 @@ unsafe impl Send for MyType {}
 - [ ] Memory ownership
 
 ### Test 10: Struct Layout
-**Prompt:**
 ```rust
 struct MyStruct {
     a: u8,
@@ -131,7 +127,6 @@ Can I pass this to C?
 ## Edge Cases
 
 ### Test 11: Union Type
-**Prompt:**
 ```rust
 union MyUnion {
     i: i32,

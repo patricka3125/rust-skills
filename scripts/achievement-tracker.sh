@@ -38,9 +38,9 @@ if [ ! -f "$STATS_FILE" ]; then
   "total_sessions": 0,
   "rust_questions": 0,
   "skills_used": 0,
-  "last_date": "",
-  "last_unsafe_date": "",
-  "first_session_date": ""
+ "last_date": ,
+ "last_unsafe_date": ,
+ "first_session_date":
 }
 EOF
 fi
@@ -92,16 +92,16 @@ unlock_achievement() {
   jq ".unlocked += [\"$id\"]" "$ACHIEVEMENTS_FILE" > "$tmp" && mv "$tmp" "$ACHIEVEMENTS_FILE"
 
   # Display celebration
-  echo ""
+ echo
   echo "=============================================="
   echo "$icon  Achievement Unlocked!  $icon"
   echo "=============================================="
-  echo ""
+ echo
   echo "   $name"
   echo "   $desc"
-  echo ""
+ echo
   echo "=============================================="
-  echo ""
+ echo
 
   # Log the achievement
   echo "[$(date -Iseconds)] UNLOCKED: $id - $name" >> "$LOG_FILE"
@@ -198,7 +198,7 @@ handle_tool_use() {
       # Check for unsafe code
       if echo "$tool_input" | grep -q 'unsafe {'; then
         increment_stat "unsafe_used" > /dev/null
-        set_stat "last_unsafe_date" "\"$(date +%Y-%m-%d)\""
+ set_stat "last_unsafe_date" "\"$(date +%Y-%m-%d)\
         set_stat "unsafe_avoided_days" "0"
         echo "⚠️ Unsafe code detected"
       fi
@@ -265,7 +265,7 @@ handle_session_start() {
 
   # Set first session date
   if [ -z "$first_date" ] || [ "$first_date" = "null" ]; then
-    set_stat "first_session_date" "\"$today\""
+ set_stat "first_session_date" "\"$today\
   fi
 
   # Update session count and streak
@@ -300,7 +300,7 @@ handle_session_start() {
       increment_stat "unsafe_avoided_days" > /dev/null
     fi
 
-    set_stat "last_date" "\"$today\""
+ set_stat "last_date" "\"$today\
 
     # Show streak reminder
     local streak=$(get_stat "streak_days")

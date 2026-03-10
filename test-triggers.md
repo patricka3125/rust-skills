@@ -25,9 +25,9 @@
 
 | Query | Expected Skill |
 |-------|----------------|
-|`Arc Rc `| m02-resource |
+| `Arc Rc ` | m02-resource |
 | `Box vs Rc vs Arc` | m02-resource |
-|`smart pointer `| m02-resource |
+| `smart pointer ` | m02-resource |
 | `shared ownership` | m02-resource |
 
 ## Mutability (m03-mutability)
@@ -55,7 +55,7 @@
 | Query | Expected Skill |
 |-------|----------------|
 | `newtype pattern` | m05-type-driven |
-|`PhantomData `| m05-type-driven |
+| `PhantomData ` | m05-type-driven |
 | `type state pattern` | m05-type-driven |
 | `marker trait` | m05-type-driven |
 
@@ -64,7 +64,7 @@
 | Query | Expected Skill |
 |-------|----------------|
 | `Result vs Option` | m06-error-handling |
-|`thiserror `| m06-error-handling |
+| `thiserror ` | m06-error-handling |
 | `anyhow vs eyre` | m06-error-handling |
 | `error propagation` | m06-error-handling |
 
@@ -73,9 +73,9 @@
 | Query | Expected Skill |
 |-------|----------------|
 | `cannot be sent between threads` | m07-concurrency |
-|`async await `| m07-concurrency |
+| `async await ` | m07-concurrency |
 | `Send Sync trait` | m07-concurrency |
-|`deadlock `| m07-concurrency |
+| `deadlock ` | m07-concurrency |
 
 ---
 
@@ -86,7 +86,7 @@
 | Query | Expected Skill |
 |-------|----------------|
 | `DDD in Rust` | m09-domain |
-|`domain model `| m09-domain |
+| `domain model ` | m09-domain |
 | `aggregate root` | m09-domain |
 | `value object vs entity` | m09-domain |
 
@@ -94,50 +94,50 @@
 
 | Query | Expected Skill |
 |-------|----------------|
-|`benchmark `| m10-performance |
-|`criterion `| m10-performance |
+| `benchmark ` | m10-performance |
+| `criterion ` | m10-performance |
 | `cache locality` | m10-performance |
-|` zero copy`| m10-performance |
+| ` zero copy` | m10-performance |
 
 ## Ecosystem (m11-ecosystem)
 
 | Query | Expected Skill |
 |-------|----------------|
-|` crate`| m11-ecosystem |
-|`crate `| m11-ecosystem |
-|`Cargo.toml `| m11-ecosystem |
-|`feature flags `| m11-ecosystem |
+| ` crate` | m11-ecosystem |
+| `crate ` | m11-ecosystem |
+| `Cargo.toml ` | m11-ecosystem |
+| `feature flags ` | m11-ecosystem |
 
 ## Lifecycle (m12-lifecycle)
 
 | Query | Expected Skill |
 |-------|----------------|
 | `RAII pattern` | m12-lifecycle |
-|`Drop trait `| m12-lifecycle |
-|`scopeguard `| m12-lifecycle |
+| `Drop trait ` | m12-lifecycle |
+| `scopeguard ` | m12-lifecycle |
 
 ## Domain Error (m13-domain-error)
 
 | Query | Expected Skill |
 |-------|----------------|
-|`retry `| m13-domain-error |
-|`circuit breaker `| m13-domain-error |
-|`backoff `| m13-domain-error |
+| `retry ` | m13-domain-error |
+| `circuit breaker ` | m13-domain-error |
+| `backoff ` | m13-domain-error |
 
 ## Mental Model (m14-mental-model)
 
 | Query | Expected Skill |
 |-------|----------------|
-|` Rust`| m14-mental-model |
-|` Java Rust`| m14-mental-model |
+| ` Rust` | m14-mental-model |
+| ` Java Rust` | m14-mental-model |
 
 ## Anti-Pattern (m15-anti-pattern)
 
 | Query | Expected Skill |
 |-------|----------------|
 | `code smell Rust` | m15-anti-pattern |
-|`Rust `| m15-anti-pattern |
-|`clone `| m15-anti-pattern |
+| `Rust ` | m15-anti-pattern |
+| `clone ` | m15-anti-pattern |
 
 ---
 
@@ -147,8 +147,8 @@
 
 | Query | Expected Skill |
 |-------|----------------|
-|`unsafe `| unsafe-checker |
-|`FFI `| unsafe-checker |
+| `unsafe ` | unsafe-checker |
+| `FFI ` | unsafe-checker |
 | `SAFETY comment` | unsafe-checker |
 | `raw pointer` | unsafe-checker |
 | `how to call C functions` | unsafe-checker |
@@ -157,8 +157,8 @@
 
 | Query | Expected Skill |
 |-------|----------------|
-|`tokio `| rust-learner |
-|`serde `| rust-learner |
+| `tokio ` | rust-learner |
+| `serde ` | rust-learner |
 | `crate info` | rust-learner |
 
 ## Code Style (coding-guidelines)
@@ -166,7 +166,7 @@
 | Query | Expected Skill |
 |-------|----------------|
 | `clippy warning` | coding-guidelines |
-|`rustfmt `| coding-guidelines |
+| `rustfmt ` | coding-guidelines |
 | `P.NAM.01` | coding-guidelines |
 
 ## Router (rust-router)
@@ -181,8 +181,8 @@
 | Query | Expected Skill |
 |-------|----------------|
 | `kubernetes operator in Rust` | domain-cloud-native |
-|`decimal `| domain-fintech |
-|` tensor`| domain-ml |
+| `decimal ` | domain-fintech |
+| ` tensor` | domain-ml |
 | `IoT sensor` | domain-iot |
 | `axum web server` | domain-web |
 | `clap CLI argument` | domain-cli |

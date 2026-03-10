@@ -17,11 +17,11 @@ Lightweight Rust code review using clippy.
 `cargo clippy`
 
 |----------|------|
-| `clippy::correctness` | |
-| `clippy::suspicious` | |
-| `clippy::complexity` | |
-| `clippy::perf` | |
-| `clippy::style` | |
+| `clippy::correctness` |  |
+| `clippy::suspicious` |  |
+| `clippy::complexity` |  |
+| `clippy::perf` |  |
+| `clippy::style` |  |
 
 ## Workflow
 
@@ -71,10 +71,10 @@ expect_used = "warn"
 **** `/rust-review`
 
 |------|------|----------|
-| `cargo fmt` | | |
-| `miri` |nightly| `/audit safety` |
-| `cargo audit` | | `/audit security` |
-| `lockbud` | | `/audit concurrency` |
+| `cargo fmt` |  |  |
+| `miri` | nightly | `/audit safety` |
+| `cargo audit` |  | `/audit security` |
+| `lockbud` |  | `/audit concurrency` |
 
 ## Related Commands
 

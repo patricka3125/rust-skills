@@ -19,7 +19,7 @@
 ### Step 1:
 
 |------|--------|----------|
-| E0382 |**Layer 1** ()|↑|
+| E0382 | **Layer 1** () | ↑ |
 
 **Skill**: m01-ownership
 
@@ -28,11 +28,11 @@
 ### Step 2: Layer 1 (m01-ownership)
 
 
-| Error | | |
+| Error |  |  |
 |-------|----------|--------|
-| E0382 | "Clone it" |****|
+| E0382 | "Clone it" | **** |
 
-1. → "" = Transaction Record
+1. → = Transaction Record
 
 ---
 
@@ -93,10 +93,10 @@ fn process_transaction(record: Arc<TransactionRecord>) {
 ### Arc clone()?
 
 |------|------|------|------------|
-| `.clone()` | | |❌|
-| `Arc<T>` |+1| |✅|
+| `.clone()` |  |  | ❌ |
+| `Arc<T>` | +1 |  | ✅ |
 
-- `clone()` → ""
+- `clone()` →
 - `Arc<T>` →
 
 
@@ -122,12 +122,12 @@ fn process_transaction(record: Arc<TransactionRecord>) {
 ---
 
 
-| Skill | |
+| Skill |  |
 |-------|------|
-| m01-ownership |Layer 1|
-| m02-resource |Arc/Rc|
-| m09-domain |Value Object vs Entity|
-| domain-fintech | |
+| m01-ownership | Layer 1 |
+| m02-resource | Arc/Rc |
+| m09-domain | Value Object vs Entity |
+| domain-fintech |  |
 
 ---
 

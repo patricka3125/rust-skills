@@ -6,7 +6,7 @@
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-|`decimal `| domain-fintech | rust_decimal, precision |
+| `decimal ` | domain-fintech | rust_decimal, precision |
 | `trading system design` | domain-fintech | immutable audit, Arc |
 | `currency conversion in Rust` | domain-fintech | decimal, exchange rate |
 
@@ -47,7 +47,7 @@ claude -p "HTTP "
 
 ```bash
 claude -p "clap CLI argument"
-claude -p ""
+claude -p
 ```
 
 ---
@@ -105,7 +105,7 @@ claude -p "MQTT client in Rust"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-|` tensor`| domain-ml | ndarray, candle |
+| ` tensor` | domain-ml | ndarray, candle |
 | `ML inference in Rust` | domain-ml | ONNX, model |
 | `neural network` | domain-ml | burn, training |
 

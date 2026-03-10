@@ -173,7 +173,6 @@ Entry Point Detected
 
 When stuck or confused in complex problem-solving, answer these 5 questions:
 
-| # | Question | Find Answer In |
 |---|----------|----------------|
 | 1 | What error am I solving? | Entry point / original question |
 | 2 | What layer am I in? | Current trace position |

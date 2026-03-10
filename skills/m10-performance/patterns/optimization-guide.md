@@ -133,7 +133,7 @@ for s in strings {
 }
 
 // BEST: use join for simple cases
-let result = strings.join("");
+let result = strings.join();
 ```
 
 ### Use &str When Possible

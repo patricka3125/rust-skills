@@ -127,10 +127,10 @@ for skill_dir in "$ROOT_DIR"/skills/m[0-9]*/; do
     if [ -f "$skill_dir/SKILL.md" ]; then
         skill_name=$(basename "$skill_dir")
         echo "## $skill_name" >> "$INDEX_DIR/triggers-index.md"
-        echo "" >> "$INDEX_DIR/triggers-index.md"
+ echo >> "$INDEX_DIR/triggers-index.md"
         # Extract keywords from description
         sed -n '/^description:/,/^[a-z]*:/p' "$skill_dir/SKILL.md" | grep -v "^description:" | grep -v "^[a-z]*:" | head -5 >> "$INDEX_DIR/triggers-index.md"
-        echo "" >> "$INDEX_DIR/triggers-index.md"
+ echo >> "$INDEX_DIR/triggers-index.md"
     fi
 done
 
@@ -162,7 +162,7 @@ echo "Generated: index/commands-index.md"
 # =====================================
 # Summary
 # =====================================
-echo ""
+echo
 echo "Index generation complete!"
 echo "Generated files:"
 ls -la "$INDEX_DIR"/*.md

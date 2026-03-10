@@ -100,8 +100,8 @@ _reasoning/
 ## Trade-offs Identified
 | Option | Pros | Cons |
 |--------|------|------|
-| A | | |
-| B | | |
+| A |  |  |
+| B |  |  |
 ```
 
 ### decision.md

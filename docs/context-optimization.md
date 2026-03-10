@@ -6,8 +6,8 @@
 Rust Skills **68%** token
 
 |---------|------|---------|---------|
-|**Skill **| |skill| 50-60% |
-| **context: fork** | |skill| 75-85% |
+| **Skill ** |  | skill | 50-60% |
+| **context: fork** |  | skill | 75-85% |
 
 ---
 
@@ -19,7 +19,7 @@ Skill SKILL.md
 ### rust-router
 
 |------|--------|--------|------|
-|Token| ~4,700 | ~2,000 | **~2,700 tokens** |
+| Token | ~4,700 | ~2,000 | **~2,700 tokens** |
 
 
 ```
@@ -38,7 +38,7 @@ skills/rust-router/
 | Negotiation Protocol | `patterns/negotiation.md` | 4.5 KB |
 | Workflow Example | `examples/workflow.md` | 2.3 KB |
 | OS-Checker Integration | `integrations/os-checker.md` | 1.3 KB |
-| Skill File Paths | | 1.5 KB |
+| Skill File Paths |  | 1.5 KB |
 
 
 Claude Code frontmatter `description`
@@ -76,9 +76,9 @@ agent: general-purpose # Explore
 ```
 
 
-| Skill |Token|Fork| |
+| Skill | Token | Fork |  |
 |-------|---------------|----------------|------|
-| `rust-skill-creator` | ~3,000 |~500 ()| **~83%** |
+| `rust-skill-creator` | ~3,000 | ~500 () | **~83%** |
 | `core-dynamic-skills` | ~2,000 | ~400 | **~80%** |
 | `core-fix-skill-docs` | ~1,500 | ~300 | **~80%** |
 | `rust-daily` | ~2,500 | ~500 | **~80%** |
@@ -169,8 +169,8 @@ Cross-Layer Synthesis ()
 Rust
 
 |------|--------|--------|
-|rust-router| 4,700 | 2,000 |
-|skill| 8,000 | 2,500 |
+| rust-router | 4,700 | 2,000 |
+| skill | 8,000 | 2,500 |
 
 ---
 
@@ -229,9 +229,9 @@ Rust
 
 
 |------|------|---------|
-| 2.0.0 | 2025-01-22 |rust-router (56% )|
-| 2.0.4 | 2025-01-22 |4 skills context: fork (thanks @pinghe)|
-| 2.0.5 | 2025-01-22 |Fork|
+| 2.0.0 | 2025-01-22 | rust-router (56% ) |
+| 2.0.4 | 2025-01-22 | 4 skills context: fork (thanks @pinghe) |
+| 2.0.5 | 2025-01-22 | Fork |
 
 ---
 

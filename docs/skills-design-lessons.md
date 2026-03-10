@@ -198,7 +198,7 @@ skills/core-actionbook/SKILL.md
 | Keywords in Question | Domain Skill to Load |
 |---------------------|---------------------|
 | Web API, HTTP, axum | domain-web |
-| payment, trading    | domain-fintech |
+| payment, trading | domain-fintech |
 | CLI, clap, terminal | domain-cli |
 ```
 

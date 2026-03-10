@@ -21,7 +21,7 @@ Arguments: $ARGUMENTS
 ```bash
 CACHE_DIR="$HOME/.claude/cache/rust-docs"
 MODE="expired"  # default
-TARGET=""
+TARGET=
 
 for arg in $ARGUMENTS; do
     case $arg in
@@ -65,7 +65,7 @@ if [ "$MODE" = "expired" ]; then
     # Clean empty directories
     find "$CACHE_DIR" -type d -empty -delete 2>/dev/null
 
-    echo ""
+ echo
     echo "Removed $count expired entries."
     exit 0
 fi
@@ -98,7 +98,7 @@ if [ -n "$TARGET" ]; then
     if [ $found -eq 0 ]; then
         echo "No cache found for: $TARGET"
     else
-        echo ""
+ echo
         echo "Removed $found items."
     fi
     exit 0

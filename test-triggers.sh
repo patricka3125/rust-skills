@@ -11,13 +11,13 @@
 set -e
 
 echo "=== Rust Skills Forced Eval Hook Tests ==="
-echo ""
+echo
 echo "Testing if hook triggers and Claude evaluates skills..."
-echo ""
+echo
 
 # Parse arguments
 VERBOSE=false
-SINGLE_TEST=""
+SINGLE_TEST=
 while [[ $# -gt 0 ]]; do
     case $1 in
         -v|--verbose) VERBOSE=true; shift ;;
@@ -77,7 +77,7 @@ test_hook() {
         echo -e "${RED}HOOK NOT TRIGGERED${NC}"
         echo "  First 300 chars of response:"
         echo "$result" | head -c 300
-        echo ""
+ echo
         ((FAIL++))
     fi
 
@@ -87,11 +87,11 @@ test_hook() {
         echo "$result"
         echo "  -------------------"
     fi
-    echo ""
+ echo
 }
 
 echo "--- Testing Hook Activation ---"
-echo ""
+echo
 
 # If single test specified, run only that
 if [ -n "$SINGLE_TEST" ]; then
@@ -102,7 +102,7 @@ fi
 echo "=== Summary ==="
 echo -e "Hook Triggered: ${GREEN}$PASS${NC}"
 echo -e "Hook Failed: ${RED}$FAIL${NC}"
-echo ""
+echo
 
 if [ $FAIL -gt 0 ]; then
     echo -e "${YELLOW}Some hooks didn't trigger. Check:${NC}"

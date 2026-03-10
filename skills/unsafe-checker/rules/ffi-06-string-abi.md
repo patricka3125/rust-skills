@@ -85,7 +85,7 @@ impl CAllocatedString {
 
     fn as_str(&self) -> &str {
         let c_str = unsafe { CStr::from_ptr(self.ptr) };
-        c_str.to_str().unwrap_or("")
+ c_str.to_str().unwrap_or()
     }
 }
 

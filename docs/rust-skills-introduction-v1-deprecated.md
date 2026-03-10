@@ -168,10 +168,10 @@ agent-browser
 Actionbook Rust
 
 |------|------|
-| crates.io |Crate|
-| lib.rs |Crate|
-| docs.rs |API|
-| releases.rs |Rust changelog|
+| crates.io | Crate |
+| lib.rs | Crate |
+| docs.rs | API |
+| releases.rs | Rust changelog |
 
 ****AI AgentActionbook
 
@@ -201,12 +201,12 @@ EOF
 
 
 |------|------|------|
-| `/rust-features [version]` |Rust| `/rust-features 1.84` |
-| `/crate-info <crate>` |crate| `/crate-info tokio` |
-| `/guideline <rule>` | | `/guideline P.NAM.05` |
-| `/docs <crate> [item]` |API| `/docs tokio spawn` |
-| `/sync-crate-skills` |Cargo.toml Skills| - |
-| `/unsafe-check [file]` |unsafe| `/unsafe-check src/lib.rs` |
+| `/rust-features [version]` | Rust | `/rust-features 1.84` |
+| `/crate-info <crate>` | crate | `/crate-info tokio` |
+| `/guideline <rule>` |  | `/guideline P.NAM.05` |
+| `/docs <crate> [item]` | API | `/docs tokio spawn` |
+| `/sync-crate-skills` | Cargo.toml Skills | - |
+| `/unsafe-check [file]` | unsafe | `/unsafe-check src/lib.rs` |
 
 
 **1tokio **

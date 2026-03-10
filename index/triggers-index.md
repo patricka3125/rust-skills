@@ -67,21 +67,15 @@ Complete mapping of keywords to skills.
 
 ---
 
-## Chinese Keywords → Skills
-
-|------------|----------|
-
----
-
 ## Query Patterns → Actions
 
 | Pattern | Action |
 |---------|--------|
-|" X Y" / "compare" / "vs"| Enable Negotiation Protocol |
-|"" / "best practice"| Enable Negotiation Protocol |
-|Domain + Error (e.g., " E0382")| Enable Negotiation Protocol |
+| " X Y" / "compare" / "vs" | Enable Negotiation Protocol |
+| / "best practice" | Enable Negotiation Protocol |
+| Domain + Error (e.g., " E0382") | Enable Negotiation Protocol |
 | Single error code (e.g., "E0382") | Direct lookup, no negotiation |
-|Single version query (e.g., "tokio ")| Direct lookup, no negotiation |
+| Single version query (e.g., "tokio ") | Direct lookup, no negotiation |
 
 ---
 

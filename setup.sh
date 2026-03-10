@@ -22,6 +22,6 @@ else
 fi
 
 echo "Setup complete!"
-echo ""
+echo
 echo "Usage:"
 echo "  claude --plugin-dir $(dirname "$0")"

@@ -65,7 +65,7 @@ Layer 1: Language Mechanics (HOW)
 | Domain Keywords | L1 Skill | L3 Skill |
 |-----------------|----------|----------|
 | Web API, HTTP, axum, handler | m07-concurrency | **domain-web** |
-|, , trading, payment| m01-ownership | **domain-fintech** |
+| trading, payment | m01-ownership | **domain-fintech** |
 | CLI, terminal, clap | m07-concurrency | **domain-cli** |
 | kubernetes, grpc, microservice | m07-concurrency | **domain-cloud-native** |
 | embedded, no_std, MCU | m02-resource | **domain-embedded** |
@@ -80,10 +80,10 @@ Layer 1: Language Mechanics (HOW)
 
 | Query Contains | Action |
 |----------------|--------|
-|"", "", "compare", "vs", "versus"| **MUST use negotiation** |
-|"", "best practice"| **MUST use negotiation** |
-|Domain + error (e.g., " E0382")| **MUST use negotiation** |
-|Ambiguous scope (e.g., "tokio ")| **SHOULD use negotiation** |
+| "compare", "vs", "versus" | **MUST use negotiation** |
+| "best practice" | **MUST use negotiation** |
+| Domain + error (e.g., "trading system E0382") | **MUST use negotiation** |
+| Ambiguous scope (e.g., "tokio performance") | **SHOULD use negotiation** |
 
 **When negotiation is required, include:**
 
@@ -104,7 +104,7 @@ Layer 1: Language Mechanics (HOW)
 **Disclosed Gaps:** [Gaps user should know]
 ```
 
-> **:** `patterns/negotiation.md`
+> **See:** `patterns/negotiation.md`
 
 ---
 

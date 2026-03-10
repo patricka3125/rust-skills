@@ -67,13 +67,11 @@ Refer to the local files for detailed documentation:
 
 | Function/Type | Description | Example |
 |---------------|-------------|---------|
-| ... | ... | ... |
 
 ## Deprecated Patterns (Don't Use)
 
 | Deprecated | Correct | Notes |
 |------------|---------|-------|
-| ... | ... | ... |
 
 ## When Writing Code
 

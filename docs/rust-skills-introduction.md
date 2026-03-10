@@ -1,6 +1,6 @@
 # Rust SkillsAI Rust
 
-> Claude Code Rust ——SkillsAI Rust ""
+> Claude Code Rust ——SkillsAI Rust
 
 ---
 
@@ -14,7 +14,7 @@ AI Rust
 
 "tokio spawn "AI API"Rust 1.84 "
 
-**AI Rust ""**
+**AI Rust **
 
 Rust Skills
 
@@ -23,7 +23,7 @@ Rust Skills
 ## 2. AI Rust
 
 
-Rust crate `tokio 1.0` `tokio 1.49` ""
+Rust crate `tokio 1.0` `tokio 1.49`
 
 
 - crates.io
@@ -46,12 +46,12 @@ AI unsafe
 ## 3. Rust Skills
 
 
-Rust Skills **Rust ""**
+Rust Skills **Rust **
 
 Rust 15
 
 |:----:|--------|----------|
-| m08 | |unsafe|
+| m08 |  | unsafe |
 
 Skill AI Rust
 
@@ -74,12 +74,12 @@ cd my-async-project
 2. crate Skill
 3. `~/.claude/skills/`
 
-Skill "tokio spawn " AI tokio 1.49 ""
+Skill "tokio spawn " AI tokio 1.49
 
 **Skills **
 
 |------|------|
-|Workspace|Cargo Workspace|
+| Workspace | Cargo Workspace |
 
 ### 3.3 Skill500+
 
@@ -157,19 +157,19 @@ agent-browser
 : tokio 1.49.0 ✓
 ```
 
-### Actionbook ""
+### Actionbook
 
 |------|------|
 
-Actionbook AI ""——
+Actionbook AI ——
 
 ### Rust
 
 |------|----------|
-| crates.io | |
-| lib.rs |crate|
-| docs.rs |API|
-| releases.rs |Rust changelog|
+| crates.io |  |
+| lib.rs | crate |
+| docs.rs | API |
+| releases.rs | Rust changelog |
 
 > ****AI AgentActionbook
 
@@ -199,12 +199,12 @@ EOF
 
 
 |------|------|------|
-| `/rust-features [ver]` |Rust| `/rust-features 1.84` |
-| `/crate-info <name>` |crate| `/crate-info tokio` |
-| `/guideline <rule>` | | `/guideline P.NAM.05` |
-| `/docs <crate> [item]` |API| `/docs tokio spawn` |
-| `/sync-crate-skills` |Skills| - |
-| `/unsafe-check [file]` |unsafe| `/unsafe-check src/lib.rs` |
+| `/rust-features [ver]` | Rust | `/rust-features 1.84` |
+| `/crate-info <name>` | crate | `/crate-info tokio` |
+| `/guideline <rule>` |  | `/guideline P.NAM.05` |
+| `/docs <crate> [item]` | API | `/docs tokio spawn` |
+| `/sync-crate-skills` | Skills | - |
+| `/unsafe-check [file]` | unsafe | `/unsafe-check src/lib.rs` |
 
 
 **crate **

@@ -115,14 +115,14 @@ fn example() {
 
 ```
 Rust Closure: |x| x * captured_value
-     |
+|  |
      v
 +-----------------+     +-----------------+
-| trampoline fn   | --> | closure data    |
-| (no captures)   |     | (captured_value)|
+| trampoline fn | --> | closure data |
+| (no captures) |  | (captured_value) |
 +-----------------+     +-----------------+
      |                         ^
-     |    user_data ptr        |
+| user_data ptr |
      +-------------------------+
 
 C sees: function pointer + void* user_data

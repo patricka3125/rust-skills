@@ -119,12 +119,11 @@ To implementation (Layer 1):
 ```
 Stack                          Heap
 +----------------+            +----------------+
-| main()         |            |                |
-|   s1 ─────────────────────> │ "hello"        |
+| main() |  |  |
+| s1 ─────────────────────> │ "hello" |
 |                |            |                |
-| fn takes(s) {  |            |                |
-|   s2 (moved) ─────────────> │ "hello"        |
-| }              |            | (s1 invalid)   |
+| fn takes(s) { |  |  |
+| s2 (moved) ─────────────> │ "hello" |
 +----------------+            +----------------+
 
 After move: s1 is no longer valid

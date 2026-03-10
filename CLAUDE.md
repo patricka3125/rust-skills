@@ -6,10 +6,10 @@
 
 | Query Contains | Action |
 |----------------|--------|
-|"", "", "compare", "vs", "versus", "", "difference"| **MUST invoke rust-router FIRST** |
-|"", "best practice", "", "recommend"| **MUST invoke rust-router FIRST** |
-|Domain keyword + error (e.g., " E0382", "web API Send")| **MUST invoke rust-router FIRST** |
-|Two or more technologies (e.g., "tokio async-std")| **MUST invoke rust-router FIRST** |
+| , , "compare", "vs", "versus", , "difference" | **MUST invoke rust-router FIRST** |
+| , "best practice", , "recommend" | **MUST invoke rust-router FIRST** |
+| Domain keyword + error (e.g., " E0382", "web API Send") | **MUST invoke rust-router FIRST** |
+| Two or more technologies (e.g., "tokio async-std") | **MUST invoke rust-router FIRST** |
 
 **When negotiation is required, your response MUST include:**
 
@@ -58,13 +58,13 @@ ANY question containing:
 
 ```
 User Question
-     |
+|  |
 [1] Invoke: Skill(rust-router)
-     |
+|  |
 [2] Read rust-router content -> Identify category (m01-m15, etc.)
-     |
+|  |
 [3] Invoke specialized skill if needed (e.g., m01-ownership)
-     |
+|  |
 [4] Answer based on skill knowledge
 ```
 

@@ -31,7 +31,6 @@
 ## Content Accuracy Tests
 
 ### Test 4: E0382 Detailed Explanation
-**Prompt:**
 ```
 I have this code and it gives E0382:
 let s = String::from("hello");
@@ -45,7 +44,6 @@ println!("{}", s);
 - [ ] Provide fix: `s.clone()` or borrow `&s`
 
 ### Test 5: Lifetime Error
-**Prompt:**
 ```
 fn longest(x: &str, y: &str) -> &str {
     if x.len() > y.len() { x } else { y }
@@ -59,7 +57,6 @@ Error: missing lifetime specifier
 - [ ] Explain lifetime elision rules
 
 ### Test 6: Borrow Conflict
-**Prompt:**
 ```
 let mut v = vec![1, 2, 3];
 let first = &v[0];
@@ -97,7 +94,6 @@ println!("{}", first);
 ## Edge Cases
 
 ### Test 9: Complex Lifetime
-**Prompt:**
 ```
 struct Excerpt<'a> {
     part: &'a str,

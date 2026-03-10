@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""
+"
 TDD tests for rust-skills hook matcher
 Run: python3 tests/hook-matcher-test.py
-"""
+"
 
 import re
 import json

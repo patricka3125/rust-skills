@@ -92,24 +92,24 @@ For each unsafe operation, document the invariants:
 
 ```
 Need unsafe?
-     |
+|  |
      v
 Can you use safe Rust? --Yes--> Don't use unsafe
-     |
+|  |
      No
      v
 Can you use existing safe abstraction? --Yes--> Use it (std, crates)
-     |
+|  |
      No
      v
 Document all invariants
-     |
+|  |
      v
 Add SAFETY comments
-     |
+|  |
      v
 Write the unsafe code
-     |
+|  |
      v
 Test with Miri
 ```

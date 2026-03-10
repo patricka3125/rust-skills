@@ -184,7 +184,7 @@ User Question
 |---------|---------|
 | `/rust-features [version]` | Rust changelog/features |
 | `/crate-info crate` | Crate metadata |
-| `/rust-daily [day\|week\|month]` | Ecosystem news |
+| `/rust-daily [day\ | week\ | month]` | Ecosystem news |
 
 ### Audit Commands
 
@@ -193,14 +193,14 @@ User Question
 | `/unsafe-check file` | Analyze file for unsafe issues |
 | `/unsafe-review file` | Interactive unsafe review |
 | `/rust-review file` | Lightweight clippy review |
-| `/audit [security\|safety\|concurrency\|full]` | Heavy-weight audit |
+| `/audit [security\ | safety\ | concurrency\ | full]` | Heavy-weight audit |
 
 ### Cache Commands
 
 | Command | Purpose |
 |---------|---------|
 | `/cache-status [--verbose]` | Show cache status |
-| `/cache-clean [--all\|--expired\|crate]` | Clean cache |
+| `/cache-clean [--all\ | --expired\ | crate]` | Clean cache |
 
 ### Dynamic Skill Commands
 
@@ -278,8 +278,8 @@ unsafe {
 | Concurrency | async, await, Send, Sync, thread, spawn |
 | Smart Pointers | Box, Rc, Arc, RefCell, Cell, Mutex |
 | Domains | Web API, HTTP, axum, payment, trading, CLI |
-| Chinese |, , , , ,|
-| Questions |how to, why, what is, , ,|
+| Chinese |  |
+| Questions | how to, why, what is |
 
 ### Hook Behavior
 

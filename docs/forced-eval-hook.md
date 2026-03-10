@@ -11,14 +11,14 @@ Claude **skills**skill description
 
 
 |------|--------|------|
-|description| **~20%** |Claude|
-| **Forced Eval Hook** | **~84%** | |
-| LLM Eval Hook | ~80% |API|
+| description | **~20%** | Claude |
+| **Forced Eval Hook** | **~84%** |  |
+| LLM Eval Hook | ~80% | API |
 
 ## Forced Eval Hook
 
 
-**** Claude skill""
+**** Claude skill
 
 - `MANDATORY` -
 - `CRITICAL` -
@@ -148,7 +148,7 @@ trait|generic|unsafe|ffi|error|result|option|tokio|serde|axum|
 - crate
 
 
-Hook ""Claude
+Hook Claude
 
 
 skills Claude
@@ -161,8 +161,8 @@ skills Claude
 
 
 |------|------|
-|token|Hook token|
-|Regex| |
+| token | Hook token |
+| Regex |  |
 
 
 ### A: description

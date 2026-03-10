@@ -104,7 +104,7 @@ User: "Rename parse_config to load_config"
 | src/main.rs | 30 | `let cfg = parse_config(` | Call |
 | src/lib.rs | 8 | `pub use config::parse_config` | Re-export |
 | tests/config_test.rs | 15 | `parse_config("test.toml")` | Test |
-| tests/config_test.rs | 25 | `parse_config("")` | Test |
+| tests/config_test.rs | 25 | `parse_config()` | Test |
 | docs/api.md | 42 | `parse_config` | Documentation |
 
 ### Potential Issues

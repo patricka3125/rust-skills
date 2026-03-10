@@ -30,9 +30,9 @@ fi
 ```bash
 # Count files and size by category
 echo "=== Rust Docs Cache Status ==="
-echo ""
+echo
 echo "Location: $CACHE_DIR"
-echo ""
+echo
 
 for category in std docs.rs releases.rs lib.rs clippy; do
     if [ -d "$CACHE_DIR/$category" ]; then
@@ -53,7 +53,7 @@ for category in std docs.rs releases.rs lib.rs clippy; do
     fi
 done
 
-echo ""
+echo
 total=$(find "$CACHE_DIR" -name "*.json" | wc -l | tr -d ' ')
 total_size=$(du -sh "$CACHE_DIR" 2>/dev/null | cut -f1)
 echo "Total: $total items, $total_size"
@@ -64,7 +64,7 @@ echo "Total: $total items, $total_size"
 If `--verbose` flag is set:
 
 ```bash
-echo ""
+echo
 echo "=== Cached Items ==="
 for f in $(find "$CACHE_DIR" -name "*.json" -type f | sort); do
     rel_path=${f#$CACHE_DIR/}

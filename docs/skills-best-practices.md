@@ -234,7 +234,6 @@ Refer to the local files for detailed documentation:
 
 | Pattern | When | Example |
 |---------|------|---------|
-| ... | ... | ... |
 
 ## Key Patterns
 
@@ -247,13 +246,11 @@ Refer to the local files for detailed documentation:
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| ... | ... | ... |
 
 ## Deprecated Patterns (Don't Use)
 
 | Deprecated | Correct | Notes |
 |------------|---------|-------|
-| ... | ... | ... |
 
 ## When Writing Code
 
@@ -289,5 +286,5 @@ Skill
 
 
 |------|----------|
-|CSO|"CRITICAL:" +|
-| TDD |skill|
+| CSO | "CRITICAL:" + |
+| TDD | skill |

@@ -10,7 +10,7 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 echo "======================================"
 echo "Rust Skills Quality Check"
 echo "======================================"
-echo ""
+echo
 
 # Colors
 GREEN='\033[0;32m'
@@ -59,7 +59,7 @@ for skill_file in $(find "$ROOT_DIR/skills" -name "SKILL.md" -type f); do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # 2. Check Agent Tool Declarations
@@ -78,7 +78,7 @@ for agent_file in "$ROOT_DIR"/agents/*.md; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # 3. Check for Dead Links in Skills
@@ -105,7 +105,7 @@ for md_file in $(find "$ROOT_DIR/skills" -name "*.md" -type f); do
     done
 done
 
-echo ""
+echo
 
 # =====================================
 # 4. Check Version Consistency
@@ -128,7 +128,7 @@ else
     warn "Missing VERSION or metadata.json"
 fi
 
-echo ""
+echo
 
 # =====================================
 # 5. Check Required Directories
@@ -153,7 +153,7 @@ for dir in "${required_dirs[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # 6. Check Skill Count Matches Metadata
@@ -180,7 +180,7 @@ if [ -f "$metadata_file" ]; then
     fi
 fi
 
-echo ""
+echo
 
 # =====================================
 # Summary
@@ -190,7 +190,7 @@ echo "Quality Check Summary"
 echo "======================================"
 echo -e "Errors:   ${RED}$ERRORS${NC}"
 echo -e "Warnings: ${YELLOW}$WARNINGS${NC}"
-echo ""
+echo
 
 if [ $ERRORS -gt 0 ]; then
     echo -e "${RED}Quality check FAILED${NC}"

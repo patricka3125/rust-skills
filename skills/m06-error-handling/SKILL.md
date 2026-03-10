@@ -101,7 +101,6 @@ From design to implementation:
 |---------|------|---------|
 | `Result<T, E>` | Recoverable error | `fn read() -> Result<String, io::Error>` |
 | `Option<T>` | Absence is normal | `fn find() -> Option<&Item>` |
-| `?` | Propagate error | `let data = file.read()?;` |
 | `unwrap()` | Dev/test only | `config.get("key").unwrap()` |
 | `expect()` | Invariant holds | `env.get("HOME").expect("HOME set")` |
 | `panic!` | Unrecoverable | `panic!("critical failure")` |

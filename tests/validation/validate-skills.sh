@@ -10,7 +10,7 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 echo "======================================"
 echo "Rust Skills Validation"
 echo "======================================"
-echo ""
+echo
 
 # Colors
 GREEN='\033[0;32m'
@@ -63,7 +63,7 @@ for dir in "${dirs[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # SKILL.md Files Check
@@ -93,7 +93,7 @@ for file in "${skill_files[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # Agent Files Check
@@ -119,7 +119,7 @@ for file in "${agent_files[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # Command Files Check
@@ -140,7 +140,7 @@ for file in "${command_files[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # Unsafe-Checker Rules Check
@@ -166,7 +166,7 @@ else
     fail "unsafe-checker checklists missing"
 fi
 
-echo ""
+echo
 
 # =====================================
 # Deep Dive Content Check
@@ -192,7 +192,7 @@ for file in "${deep_content[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # Cache Structure Check
@@ -214,7 +214,7 @@ for dir in "${cache_dirs[@]}"; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # Summary

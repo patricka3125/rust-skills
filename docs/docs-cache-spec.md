@@ -67,11 +67,11 @@ Types that can be transferred across thread boundaries...
 
 
 |----------|--------------|------|
-| std library |30| |
-| crate docs (stable) |7| |
-| releases.rs | | |
-| lib.rs (crate info) |1| |
-| clippy lints |14|Rust|
+| std library | 30 |  |
+| crate docs (stable) | 7 |  |
+| releases.rs |  |  |
+| lib.rs (crate info) | 1 |  |
+| clippy lints | 14 | Rust |
 
 ## Agent
 
@@ -115,8 +115,8 @@ Expired: 23 items
 
 
 |------|------|
-| `agents/docs-cache.md` | |
-| `agents/docs-researcher.md` | |
-| `agents/std-docs-researcher.md` | |
-| `commands/cache-status.md` | |
-| `commands/cache-clean.md` | |
+| `agents/docs-cache.md` |  |
+| `agents/docs-researcher.md` |  |
+| `agents/std-docs-researcher.md` |  |
+| `commands/cache-status.md` |  |
+| `commands/cache-clean.md` |  |

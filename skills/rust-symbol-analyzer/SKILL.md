@@ -108,28 +108,24 @@ User: "What's the structure of this project?"
 | Config | src/config.rs:10 | 5 | Debug, Clone |
 | User | src/models/user.rs:8 | 4 | Debug, Serialize |
 | Order | src/models/order.rs:15 | 6 | Debug, Serialize |
-| ... | | | |
 
 ### Traits (4)
 | Name | Location | Methods | Implementors |
 |------|----------|---------|--------------|
 | Handler | src/handlers/mod.rs:5 | 3 | AuthHandler, ApiHandler |
 | Repository | src/db/mod.rs:12 | 5 | UserRepo, OrderRepo |
-| ... | | | |
 
 ### Functions (25)
 | Name | Location | Visibility | Async |
 |------|----------|------------|-------|
 | main | src/main.rs:10 | pub | yes |
 | parse_config | src/config.rs:45 | pub | no |
-| ... | | | |
 
 ### Enums (6)
 | Name | Location | Variants |
 |------|----------|----------|
 | Error | src/error.rs:5 | 8 |
 | Status | src/models/order.rs:5 | 4 |
-| ... | | |
 ```
 
 ### Single File Analysis

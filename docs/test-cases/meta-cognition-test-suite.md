@@ -220,7 +220,7 @@ async fn upload_handler(data: Vec<u8>) -> Result<String, Error> {
 
 
 |------|----------|------------|
-|crate| |✅ ()|
+| crate |  | ✅ () |
 
 ---
 

@@ -147,31 +147,31 @@ m07-concurrency: E0277 (only for Send/Sync)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
 | "value moved after use" | m01-ownership | value moved |
-|"lifetime "| m01-ownership | lifetime |
+| "lifetime " | m01-ownership | lifetime |
 
 ## Error Handling (m06)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
 | "Result vs Option" | m06-error-handling | Result, Option |
-|"thiserror "| m06-error-handling | thiserror |
+| "thiserror " | m06-error-handling | thiserror |
 
 ## Concurrency (m07)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
 | "cannot be sent between threads" | m07-concurrency | sent between threads |
-|"async await "| m07-concurrency | async await |
+| "async await " | m07-concurrency | async await |
 | "tokio spawn" | m07-concurrency + rust-learner | tokio, spawn |
 
 ## Unsafe (unsafe-checker)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-|"SAFETY "| unsafe-checker | SAFETY |
+| "SAFETY " | unsafe-checker | SAFETY |
 
 ## Version/Crate (rust-learner)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-|"tokio "| rust-learner | |
-|"serde "| rust-learner | |
+| "tokio " | rust-learner |  |
+| "serde " | rust-learner |  |
 
 ## Router (rust-router)
 | Query | Expected Skill | Keywords |
@@ -195,7 +195,7 @@ queries=(
 for q in "${queries[@]}"; do
   echo "=== Query: $q ==="
   claude -p "$q" --verbose 2>&1 | grep -E "skill|trigger"
-  echo ""
+ echo
 done
 ```
 

@@ -242,8 +242,8 @@ When evaluating agent responses:
 ### Gap Impact
 | Gap | Impact on Intent | Action |
 |-----|------------------|--------|
-| [Gap 1] | [HIGH|MEDIUM|LOW] | [refine|accept|ignore] |
-| [Gap 2] | [HIGH|MEDIUM|LOW] | [refine|accept|ignore] |
+| [Gap 1] | [HIGH | MEDIUM | LOW] | [refine | accept | ignore] |
+| [Gap 2] | [HIGH | MEDIUM | LOW] | [refine | accept | ignore] |
 
 ### Context Provision
 [Answers to agent's context questions]

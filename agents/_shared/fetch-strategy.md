@@ -28,7 +28,7 @@ User's real browser with login and normal fingerprint.
 osascript -e 'tell application "Google Chrome" to open location "URL"'
 
 # Get page HTML
-osascript -e 'tell application "Google Chrome" to execute front window'\''s active tab javascript "document.documentElement.outerHTML"'
+osascript -e 'tell application "Google Chrome" to execute front window'\s active tab javascript "document.documentElement.outerHTML"'
 ```
 
 ### 2. crawl4ai MCP (fallback)

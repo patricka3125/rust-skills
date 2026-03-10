@@ -5,13 +5,13 @@
 
 Claude Code Skills
 - skill `description`
-- "" skill
+- skill
 - skill
 
 
 |------|----------|----------|----------|
-|B: Hook| | |plugin|
-|C: CLAUDE.md| | | |
+| B: Hook |  |  | plugin |
+| C: CLAUDE.md |  |  |  |
 
 ---
 
@@ -262,6 +262,6 @@ done
 
 
 |----------|----------|
-|skills|**** ( A)|
-|plugin|**Hook ** ( B)|
-|skill|**** ( D)|
+| skills | **** ( A) |
+| plugin | **Hook ** ( B) |
+| skill | **** ( D) |

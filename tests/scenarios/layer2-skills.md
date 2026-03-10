@@ -7,7 +7,7 @@
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `newtype pattern` | m05-type-driven | wrapper, type safety |
-|`PhantomData `| m05-type-driven | marker, lifetime |
+| `PhantomData ` | m05-type-driven | marker, lifetime |
 | `type state pattern` | m05-type-driven | state machine, compile-time |
 
 ### Test Commands
@@ -24,14 +24,14 @@ claude -p "PhantomData "
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `DDD in Rust` | m09-domain | aggregate, entity |
-|`domain model `| m09-domain | value object, repository |
+| `domain model ` | m09-domain | value object, repository |
 | `aggregate root` | m09-domain | invariant, consistency |
 
 ### Test Commands
 
 ```bash
 claude -p "DDD in Rust"
-claude -p ""
+claude -p
 ```
 
 ---
@@ -40,9 +40,9 @@ claude -p ""
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-|`benchmark `| m10-performance | criterion, bench |
-|`criterion `| m10-performance | black_box, throughput |
-|` zero copy`| m10-performance | Cow, bytes |
+| `benchmark ` | m10-performance | criterion, bench |
+| `criterion ` | m10-performance | black_box, throughput |
+| ` zero copy` | m10-performance | Cow, bytes |
 
 ### Test Commands
 
@@ -57,9 +57,9 @@ claude -p "benchmark "
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-|` crate`| m11-ecosystem | crates.io, popularity |
-|`Cargo.toml `| m11-ecosystem | version, workspace |
-|`feature flags `| m11-ecosystem | optional, cfg |
+| ` crate` | m11-ecosystem | crates.io, popularity |
+| `Cargo.toml ` | m11-ecosystem | version, workspace |
+| `feature flags ` | m11-ecosystem | optional, cfg |
 
 ### Test Commands
 
@@ -75,8 +75,8 @@ claude -p "feature flags "
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `RAII pattern` | m12-lifecycle | Drop, scope |
-|`Drop trait `| m12-lifecycle | destructor, cleanup |
-|`scopeguard `| m12-lifecycle | defer, guard |
+| `Drop trait ` | m12-lifecycle | destructor, cleanup |
+| `scopeguard ` | m12-lifecycle | defer, guard |
 
 ### Test Commands
 
@@ -91,8 +91,8 @@ claude -p "Drop trait "
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-|`retry `| m13-domain-error | backoff, exponential |
-|`circuit breaker `| m13-domain-error | state, threshold |
+| `retry ` | m13-domain-error | backoff, exponential |
+| `circuit breaker ` | m13-domain-error | state, threshold |
 
 ### Test Commands
 
@@ -107,8 +107,8 @@ claude -p "circuit breaker "
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-|` Rust`| m14-mental-model | ownership, mindset |
-|` Java Rust`| m14-mental-model | comparison, transition |
+| ` Rust` | m14-mental-model | ownership, mindset |
+| ` Java Rust` | m14-mental-model | comparison, transition |
 
 ### Test Commands
 
@@ -124,8 +124,8 @@ claude -p "Rust "
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `code smell Rust` | m15-anti-pattern | refactor, improve |
-|`Rust `| m15-anti-pattern | avoid, better |
-|`clone `| m15-anti-pattern | unnecessary, performance |
+| `Rust ` | m15-anti-pattern | avoid, better |
+| `clone ` | m15-anti-pattern | unnecessary, performance |
 
 ### Test Commands
 

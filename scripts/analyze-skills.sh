@@ -10,13 +10,13 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 echo "======================================"
 echo "Rust Skills Analysis"
 echo "======================================"
-echo ""
+echo
 
 # =====================================
 # Skill Statistics
 # =====================================
 echo "## Skill Statistics"
-echo ""
+echo
 
 meta_count=$(find "$ROOT_DIR/skills" -maxdepth 1 -type d -name "m[0-9]*" | wc -l | tr -d ' ')
 echo "Meta-Question Skills: $meta_count"
@@ -27,13 +27,13 @@ echo "Core Skills: $((core_count - 1))"
 domain_count=$(find "$ROOT_DIR/skills/domains" -maxdepth 1 -type d 2>/dev/null | wc -l | tr -d ' ')
 echo "Domain Skills: $((domain_count - 1))"
 
-echo ""
+echo
 
 # =====================================
 # Content Statistics
 # =====================================
 echo "## Content Statistics"
-echo ""
+echo
 
 # Count markdown files
 md_count=$(find "$ROOT_DIR" -name "*.md" -type f | wc -l | tr -d ' ')
@@ -51,13 +51,13 @@ echo "Unsafe Checker Rules: $unsafe_rules"
 template_count=$(find "$ROOT_DIR/templates" -name "*.rs" -type f 2>/dev/null | wc -l | tr -d ' ')
 echo "Code Templates: $template_count"
 
-echo ""
+echo
 
 # =====================================
 # Agent Statistics
 # =====================================
 echo "## Agent Statistics"
-echo ""
+echo
 
 agent_count=$(find "$ROOT_DIR/agents" -name "*.md" -type f | wc -l | tr -d ' ')
 echo "Total Agents: $agent_count"
@@ -69,13 +69,13 @@ for agent in "$ROOT_DIR"/agents/*.md; do
     echo "  - $name (${model:-default})"
 done
 
-echo ""
+echo
 
 # =====================================
 # Deep Dive Content
 # =====================================
 echo "## Deep Dive Content"
-echo ""
+echo
 
 echo "Skills with patterns/ directory:"
 for skill_dir in "$ROOT_DIR"/skills/m*/; do
@@ -86,7 +86,7 @@ for skill_dir in "$ROOT_DIR"/skills/m*/; do
     fi
 done
 
-echo ""
+echo
 echo "Skills with examples/ directory:"
 for skill_dir in "$ROOT_DIR"/skills/m*/; do
     if [ -d "$skill_dir/examples" ]; then
@@ -96,17 +96,17 @@ for skill_dir in "$ROOT_DIR"/skills/m*/; do
     fi
 done
 
-echo ""
+echo
 
 # =====================================
 # Trigger Coverage
 # =====================================
 echo "## Trigger Coverage Analysis"
-echo ""
+echo
 
 # Count unique keywords in descriptions
 echo "Extracting trigger keywords..."
-keywords=""
+keywords=
 for skill_file in $(find "$ROOT_DIR/skills" -name "SKILL.md" -type f); do
     desc=$(sed -n '/^description:/,/^[a-z]*:/p' "$skill_file")
     keywords="$keywords $desc"
@@ -118,13 +118,13 @@ echo "  - Error codes (E0xxx): $(echo "$keywords" | grep -oE 'E[0-9]{4}' | sort 
 echo "  - Chinese triggers: $(echo "$keywords" | grep -oE '[\x{4e00}-\x{9fff}]+' | sort -u | wc -l | tr -d ' ') phrases"
 echo "  - Crate names: Multiple (tokio, serde, axum, etc.)"
 
-echo ""
+echo
 
 # =====================================
 # Test Coverage
 # =====================================
 echo "## Test Coverage"
-echo ""
+echo
 
 if [ -d "$ROOT_DIR/tests/scenarios" ]; then
     scenario_count=$(find "$ROOT_DIR/tests/scenarios" -name "*.md" -type f | wc -l | tr -d ' ')
@@ -140,13 +140,13 @@ else
     echo "No test scenarios found"
 fi
 
-echo ""
+echo
 
 # =====================================
 # Cache Status
 # =====================================
 echo "## Cache Status"
-echo ""
+echo
 
 if [ -d "$ROOT_DIR/cache" ]; then
     echo "Cache directories:"
@@ -161,7 +161,7 @@ else
     echo "Cache not initialized"
 fi
 
-echo ""
+echo
 
 # =====================================
 # Summary
@@ -169,8 +169,8 @@ echo ""
 echo "======================================"
 echo "Summary"
 echo "======================================"
-echo ""
+echo
 echo "Total Skills: $((meta_count + core_count - 1 + domain_count - 1 + 2))"
 echo "Total Agents: $agent_count"
 echo "Total Content: $md_count files, $total_lines lines"
-echo ""
+echo

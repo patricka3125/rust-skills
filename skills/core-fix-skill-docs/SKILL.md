@@ -182,7 +182,7 @@ Read("~/.claude/skills/{crate_name}/SKILL.md")
 # Remove the invalid reference line
 Edit("~/.claude/skills/{crate_name}/SKILL.md",
      old_string="- `./references/{invalid_file}.md` - Description",
-     new_string="")
+ new_string=)
 ```
 
 ---

@@ -67,74 +67,46 @@ unlocked=$(cat "$achievements_file" 2>/dev/null || echo '{"unlocked":[]}')
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | First Blood | Fixed your first bug | 1/1 |
-| ✅ | Bug Hunter | Fixed 10 bugs | 10/10 |
-| ⬜ | Bug Slayer | Fixed 50 bugs | 23/50 |
-| 🔒 | Bug Terminator | Fixed 100 bugs | 23/100 |
 
 ## 🧪 Testing
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | Test Curious | Wrote your first test | 1/1 |
-| ⬜ | Test Believer | Wrote 10 tests | 7/10 |
-| 🔒 | Test Enthusiast | Wrote 50 tests | 7/50 |
-| 🔒 | TDD Master | Wrote 100 tests | 7/100 |
 
 ## 🔥 Consistency
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | Getting Started | 3 day streak | 3/3 |
-| ✅ | Week Warrior | 7 day streak | 7/7 |
-| ⬜ | Monthly Master | 30 day streak | 12/30 |
-| 🔒 | Unstoppable | 100 day streak | 12/100 |
 
 ## 🛡️ Safety
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | Safety First | 7 days no unsafe | 7/7 |
-| ⬜ | Safe Rustacean | 30 days no unsafe | 18/30 |
-| 🔒 | Safety Champion | 100 days no unsafe | 18/100 |
 
 ## 🔧 Error Resolution
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | Error Whisperer | Resolved first error | 1/1 |
-| ⬜ | Borrow Checker's Friend | 25 errors | 15/25 |
-| 🔒 | Compiler Whisperer | 100 errors | 15/100 |
 
 ## 📝 Documentation
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ⬜ | Documenter | 5 doc comments | 2/5 |
-| 🔒 | Documentation Master | 25 doc comments | 2/25 |
 
 ## 🧹 Refactoring
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ⬜ | Code Cleaner | 5 refactors | 3/5 |
-| 🔒 | Architect | 25 refactors | 3/25 |
 
 ## 🎓 Learning
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | Curious Crab | 10 Rust questions | 10/10 |
-| ⬜ | Knowledge Seeker | 50 questions | 32/50 |
-| 🔒 | Rust Scholar | 100 questions | 32/100 |
 
 ## 📅 Sessions
 
 | Status | Achievement | Description | Progress |
 |--------|-------------|-------------|----------|
-| ✅ | Hello, Rust! | First session | 1/1 |
-| ⬜ | Regular | 50 sessions | 28/50 |
-| 🔒 | Dedicated | 200 sessions | 28/200 |
 
 ---
 
@@ -241,9 +213,6 @@ echo "🌱 Start fresh and earn new achievements!"
 
 | Icon | Meaning |
 |------|---------|
-| ✅ | Unlocked |
-| ⬜ | In progress (>50% complete) |
-| 🔒 | Locked (<50% complete) |
 
 ---
 

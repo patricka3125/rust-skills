@@ -18,7 +18,7 @@ Complete list of all achievements with unlock requirements.
 | Refactoring | 2 | Code improvement |
 | Learning | 3 | Asking questions |
 | Sessions | 3 | Coding sessions |
-| **Total** | **30** | |
+| **Total** | **30** |  |
 
 ---
 
@@ -188,7 +188,7 @@ Status:
   "rust_questions": 0,
   "skills_used": 0,
   "last_date": "2026-01-20",
-  "last_unsafe_date": "",
+ "last_unsafe_date": ,
   "first_session_date": "2026-01-01"
 }
 ```

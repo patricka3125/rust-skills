@@ -112,8 +112,6 @@ grep -E "^pub (fn|struct|enum|trait|type|mod|const|static)" src/**/*.rs
 **Extraction targets:**
 | Pattern | Captures |
 |---------|----------|
-| `//!` | Module-level docs |
-| `///` | Item-level docs |
 | `pub fn` | Public functions |
 | `pub struct` | Public structs |
 | `pub enum` | Public enums |
