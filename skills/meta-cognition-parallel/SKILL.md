@@ -1,6 +1,6 @@
 ---
 name: meta-cognition-parallel
-description: "EXPERIMENTAL: Three-layer parallel meta-cognition analysis. Triggers on: /meta-parallel, 三层分析, parallel analysis, 并行元认知"
+description: "EXPERIMENTAL: Three-layer parallel meta-cognition analysis. Triggers on: /meta-parallel, parallel analysis"
 argument-hint: "<rust_question>"
 ---
 
@@ -48,7 +48,7 @@ Domain-Correct Architectural Solution
 
 **Example:**
 ```
-/meta-parallel 我的交易系统报 E0382 错误，应该用 clone 吗？
+/meta-parallel E0382 clone
 ```
 
 ## Execution Mode Detection
@@ -311,21 +311,21 @@ L1 Mechanism: [Feature]
 
 ### Test 1: Trading System E0382
 ```
-/meta-parallel 交易系统报 E0382，trade record 被 move 了
+/meta-parallel E0382trade record move
 ```
 
 Expected: L3 identifies FinTech constraints → L2 suggests shared immutable → L1 recommends Arc<T>
 
 ### Test 2: Web API Concurrency
 ```
-/meta-parallel Web API 中多个 handler 需要共享数据库连接池
+/meta-parallel Web API handler
 ```
 
 Expected: L3 identifies Web constraints → L2 suggests connection pooling → L1 recommends Arc<Pool>
 
 ### Test 3: CLI Tool Config
 ```
-/meta-parallel CLI 工具如何处理配置文件和命令行参数的优先级
+/meta-parallel CLI
 ```
 
 Expected: L3 identifies CLI constraints → L2 suggests config precedence pattern → L1 recommends builder pattern

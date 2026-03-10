@@ -135,20 +135,18 @@
 ## Chinese Trigger Tests
 
 ### Test 18: Chinese Ownership Query
-**Prompt:** "所有权是什么？"
 **Expected Route:** m01-ownership
 **Verification:**
 - [ ] Correct skill triggered
 - [ ] Response can be in Chinese
 
 ### Test 19: Chinese Version Query
-**Prompt:** "Rust 最新版本是什么？"
+**Prompt:** "Rust "
 **Expected Route:** rust-learner
 **Verification:**
 - [ ] Uses agents, not WebSearch
 
 ### Test 20: Chinese Error Query
-**Prompt:** "借用检查器报错怎么办？"
 **Expected Route:** m01-ownership
 **Verification:**
 - [ ] Borrow checker help provided

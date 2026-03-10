@@ -38,25 +38,25 @@ Use the test scenarios as prompts:
 
 ```bash
 # Layer 1: Language Mechanics
-claude -p "E0382 错误怎么解决"           # m01-ownership
+claude -p "E0382 " # m01-ownership
 claude -p "E0499 multiple mutable borrows" # m03-mutability
 claude -p "newtype pattern"              # m05-type-driven
 claude -p "Send Sync trait"              # m07-concurrency
 
 # Layer 2: Design Choices
 claude -p "DDD in Rust"                  # m09-domain
-claude -p "benchmark 怎么写"              # m10-performance
+claude -p "benchmark " # m10-performance
 claude -p "RAII pattern"                 # m12-lifecycle
-claude -p "常见 Rust 错误"                # m15-anti-pattern
+claude -p "Rust " # m15-anti-pattern
 
 # Layer 3: Domain Constraints
 claude -p "axum web server"              # domain-web
-claude -p "decimal 精度计算"              # domain-fintech
+claude -p "decimal " # domain-fintech
 claude -p "no_std embedded"              # domain-embedded
 
 # Core Skills
-claude -p "unsafe 代码怎么写"             # unsafe-checker
-claude -p "tokio 最新版本"                # rust-learner
+claude -p "unsafe " # unsafe-checker
+claude -p "tokio " # rust-learner
 ```
 
 ### Validation Script

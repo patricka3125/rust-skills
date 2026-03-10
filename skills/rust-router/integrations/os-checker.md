@@ -1,6 +1,5 @@
 # OS-Checker Integration
 
-> 代码审查和安全审计工具集成
 
 ## Available Commands
 

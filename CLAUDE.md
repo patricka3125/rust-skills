@@ -6,10 +6,10 @@
 
 | Query Contains | Action |
 |----------------|--------|
-| "比较", "对比", "compare", "vs", "versus", "区别", "difference" | **MUST invoke rust-router FIRST** |
-| "最佳实践", "best practice", "推荐", "recommend" | **MUST invoke rust-router FIRST** |
-| Domain keyword + error (e.g., "交易系统 E0382", "web API Send") | **MUST invoke rust-router FIRST** |
-| Two or more technologies (e.g., "tokio 和 async-std") | **MUST invoke rust-router FIRST** |
+|"", "", "compare", "vs", "versus", "", "difference"| **MUST invoke rust-router FIRST** |
+|"", "best practice", "", "recommend"| **MUST invoke rust-router FIRST** |
+|Domain keyword + error (e.g., " E0382", "web API Send")| **MUST invoke rust-router FIRST** |
+|Two or more technologies (e.g., "tokio async-std")| **MUST invoke rust-router FIRST** |
 
 **When negotiation is required, your response MUST include:**
 

@@ -1,6 +1,6 @@
 # Rust Skills
 
-[中文](./README-zh.md) | [日本語](./README-ja.md)
+[](./README-zh.md) | [](./README-ja.md)
 
 > AI-powered Rust development assistant with meta-cognition framework
 
@@ -321,10 +321,10 @@ Domain-correct architectural solution
 
 ## Documentation
 
-- [Architecture (中文)](./docs/architecture-zh.md)
-- [Functional Overview (中文)](./docs/functional-overview-zh.md)
-- [Hook Mechanism (中文)](./docs/hook-mechanism-zh.md)
-- [Prompt Engineering (中文)](./docs/prompt-engineering-zh.md)
+- [Architecture ()](./docs/architecture-zh.md)
+- [Functional Overview ()](./docs/functional-overview-zh.md)
+- [Hook Mechanism ()](./docs/hook-mechanism-zh.md)
+- [Prompt Engineering ()](./docs/prompt-engineering-zh.md)
 - [Meta-Cognition Example: E0382](./docs/meta-cognition-example-e0382.md)
 
 ## Contributing

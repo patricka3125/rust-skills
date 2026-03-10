@@ -1,6 +1,5 @@
 # Negotiation Protocol
 
-> 比较查询和跨领域问题的处理协议
 
 ## When to Enable Negotiation
 

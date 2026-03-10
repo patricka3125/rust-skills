@@ -1,30 +1,18 @@
-# 文档缓存规范
 
-> Agent 获取的文档结果本地缓存机制
+> Agent
 
-## 缓存目标
 
-- 减少重复网络请求
-- 加快响应速度
-- 离线可用（在缓存有效期内）
-
-## 缓存位置
-
-### 优先级
-
-1. **Skill references 目录**（如果 skill 存在）
+1. **Skill references **skill
    ```
    ~/.claude/skills/{crate}/references/{item}.md
    ```
 
-2. **全局缓存目录**（fallback）
+2. ****fallback
    ```
    ~/.claude/cache/rust-docs/{source}/{path}.json
    ```
 
-### 路径映射
 
-| 文档类型 | 缓存路径 |
 |----------|----------|
 | docs.rs crate | `~/.claude/cache/rust-docs/docs.rs/{crate}/{item}.json` |
 | std library | `~/.claude/cache/rust-docs/std/{module}/{item}.json` |
@@ -32,9 +20,8 @@
 | lib.rs | `~/.claude/cache/rust-docs/lib.rs/{crate}.json` |
 | clippy | `~/.claude/cache/rust-docs/clippy/{lint}.json` |
 
-## 缓存格式
 
-### JSON 结构
+### JSON
 
 ```json
 {
@@ -57,7 +44,7 @@
 }
 ```
 
-### Markdown 格式（用于 references/）
+### Markdown references/
 
 ```markdown
 ---
@@ -78,50 +65,36 @@ pub unsafe auto trait Send { }
 Types that can be transferred across thread boundaries...
 ```
 
-## 过期时间
 
-| 文档类型 | 默认过期时间 | 说明 |
 |----------|--------------|------|
-| std library | 30 天 | 稳定，变化少 |
-| crate docs (stable) | 7 天 | 版本可能更新 |
-| releases.rs | 永不过期 | 历史版本不变 |
-| lib.rs (crate info) | 1 天 | 版本信息变化快 |
-| clippy lints | 14 天 | 每次 Rust 版本更新 |
+| std library |30| |
+| crate docs (stable) |7| |
+| releases.rs | | |
+| lib.rs (crate info) |1| |
+| clippy lints |14|Rust|
 
-## Agent 工作流程
+## Agent
 
-### 1. 检查缓存
-
-```
-1. 构建缓存路径
-2. 检查文件是否存在
-3. 检查是否过期 (expires_at < now)
-4. 如果有效，返回缓存内容
-```
-
-### 2. 获取并缓存
 
 ```
-1. 使用 actionbook + agent-browser 获取
-2. 解析内容
-3. 生成缓存文件（JSON 或 Markdown）
-4. 保存到对应路径
-5. 返回内容
+3. (expires_at < now)
 ```
 
-### 3. 强制刷新
 
-用户可以请求强制刷新：
 ```
-"刷新 Send trait 文档"
+1. actionbook + agent-browser
+3. JSON Markdown
+```
+
+
+```
+"Send trait "
 "refresh tokio::spawn docs"
 ```
 
-## 缓存管理命令
 
 ### /rust-skills:cache-status
 
-显示缓存状态：
 ```
 Rust Docs Cache Status:
 - std library: 45 items, 12MB
@@ -134,19 +107,16 @@ Expired: 23 items
 
 ### /rust-skills:cache-clean
 
-清理过期或全部缓存：
 ```
-/rust-skills:cache-clean          # 清理过期
-/rust-skills:cache-clean --all    # 清理全部
-/rust-skills:cache-clean tokio    # 清理特定 crate
+/rust-skills:cache-clean #
+/rust-skills:cache-clean --all #
+/rust-skills:cache-clean tokio # crate
 ```
 
-## 实现位置
 
-| 文件 | 职责 |
 |------|------|
-| `agents/docs-cache.md` | 缓存检查和保存的通用指令 |
-| `agents/docs-researcher.md` | 更新：添加缓存逻辑 |
-| `agents/std-docs-researcher.md` | 更新：添加缓存逻辑 |
-| `commands/cache-status.md` | 缓存状态命令 |
-| `commands/cache-clean.md` | 缓存清理命令 |
+| `agents/docs-cache.md` | |
+| `agents/docs-researcher.md` | |
+| `agents/std-docs-researcher.md` | |
+| `commands/cache-status.md` | |
+| `commands/cache-clean.md` | |

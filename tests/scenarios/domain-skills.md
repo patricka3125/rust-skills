@@ -6,15 +6,14 @@
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `decimal 精度计算` | domain-fintech | rust_decimal, precision |
+|`decimal `| domain-fintech | rust_decimal, precision |
 | `trading system design` | domain-fintech | immutable audit, Arc |
-| `金融交易系统怎么设计` | domain-fintech | 审计, 不可变 |
 | `currency conversion in Rust` | domain-fintech | decimal, exchange rate |
 
 ### Test Commands
 
 ```bash
-claude -p "decimal 精度计算"
+claude -p "decimal "
 claude -p "trading system design"
 ```
 
@@ -25,7 +24,6 @@ claude -p "trading system design"
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `axum web server` | domain-web | handler, router, State |
-| `HTTP 中间件怎么写` | domain-web | middleware, tower |
 | `REST API design in Rust` | domain-web | extractor, response |
 | `actix-web vs axum` | domain-web + negotiation | comparison |
 
@@ -33,7 +31,7 @@ claude -p "trading system design"
 
 ```bash
 claude -p "axum web server"
-claude -p "HTTP 中间件怎么写"
+claude -p "HTTP "
 ```
 
 ---
@@ -43,14 +41,13 @@ claude -p "HTTP 中间件怎么写"
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `clap CLI argument` | domain-cli | derive, subcommand |
-| `命令行工具开发` | domain-cli | clap, args |
 | `interactive terminal` | domain-cli | ratatui, crossterm |
 
 ### Test Commands
 
 ```bash
 claude -p "clap CLI argument"
-claude -p "命令行工具开发"
+claude -p ""
 ```
 
 ---
@@ -60,7 +57,6 @@ claude -p "命令行工具开发"
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `no_std embedded` | domain-embedded | #![no_std], heapless |
-| `嵌入式 Rust 开发` | domain-embedded | cortex-m, HAL |
 | `STM32 in Rust` | domain-embedded | stm32, PAC |
 | `embedded-hal usage` | domain-embedded | trait, peripheral |
 
@@ -68,7 +64,7 @@ claude -p "命令行工具开发"
 
 ```bash
 claude -p "no_std embedded"
-claude -p "嵌入式 Rust 开发"
+claude -p "Rust "
 ```
 
 ---
@@ -79,7 +75,6 @@ claude -p "嵌入式 Rust 开发"
 |-------|----------------|-------------------|
 | `kubernetes operator in Rust` | domain-cloud-native | kube-rs, CRD |
 | `gRPC service` | domain-cloud-native | tonic, protobuf |
-| `微服务架构设计` | domain-cloud-native | observability, health check |
 
 ### Test Commands
 
@@ -95,7 +90,6 @@ claude -p "gRPC service"
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `IoT sensor` | domain-iot | MQTT, telemetry |
-| `物联网设备通信` | domain-iot | protocol, edge |
 | `MQTT client in Rust` | domain-iot | rumqttc, publish |
 
 ### Test Commands
@@ -111,14 +105,14 @@ claude -p "MQTT client in Rust"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `机器学习 tensor` | domain-ml | ndarray, candle |
+|` tensor`| domain-ml | ndarray, candle |
 | `ML inference in Rust` | domain-ml | ONNX, model |
 | `neural network` | domain-ml | burn, training |
 
 ### Test Commands
 
 ```bash
-claude -p "机器学习 tensor"
+claude -p "tensor"
 claude -p "ML inference in Rust"
 ```
 

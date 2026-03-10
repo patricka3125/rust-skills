@@ -1,18 +1,18 @@
 ---
 name: rust-router
 description: "CRITICAL: Use for ALL Rust questions including errors, design, and coding.
-HIGHEST PRIORITY for: 比较, 对比, compare, vs, versus, 区别, difference, 最佳实践, best practice,
-tokio vs, async-std vs, 比较 tokio, 比较 async,
+HIGHEST PRIORITY for: compare, vs, versus, difference, best practice,
+tokio vs, async-std vs, tokio, async,
 Triggers on: Rust, cargo, rustc, crate, Cargo.toml,
-意图分析, 问题分析, 语义分析, analyze intent, question analysis,
+analyze intent, question analysis,
 compile error, borrow error, lifetime error, ownership error, type error, trait error,
 value moved, cannot borrow, does not live long enough, mismatched types, not satisfied,
 E0382, E0597, E0277, E0308, E0499, E0502, E0596,
 async, await, Send, Sync, tokio, concurrency, error handling,
-编译错误, compile error, 所有权, ownership, 借用, borrow, 生命周期, lifetime, 类型错误, type error,
-异步, async, 并发, concurrency, 错误处理, error handling,
-问题, problem, question, 怎么用, how to use, 如何, how to, 为什么, why,
-什么是, what is, 帮我写, help me write, 实现, implement, 解释, explain"
+compile error, ownership, borrow, lifetime, type error,
+async, concurrency, error handling,
+problem, question, how to use, how to, why,
+what is, help me write, implement, explain"
 globs: ["**/Cargo.toml", "**/*.rs"]
 ---
 
@@ -65,7 +65,7 @@ Layer 1: Language Mechanics (HOW)
 | Domain Keywords | L1 Skill | L3 Skill |
 |-----------------|----------|----------|
 | Web API, HTTP, axum, handler | m07-concurrency | **domain-web** |
-| 交易, 支付, trading, payment | m01-ownership | **domain-fintech** |
+|, , trading, payment| m01-ownership | **domain-fintech** |
 | CLI, terminal, clap | m07-concurrency | **domain-cli** |
 | kubernetes, grpc, microservice | m07-concurrency | **domain-cloud-native** |
 | embedded, no_std, MCU | m02-resource | **domain-embedded** |
@@ -80,10 +80,10 @@ Layer 1: Language Mechanics (HOW)
 
 | Query Contains | Action |
 |----------------|--------|
-| "比较", "对比", "compare", "vs", "versus" | **MUST use negotiation** |
-| "最佳实践", "best practice" | **MUST use negotiation** |
-| Domain + error (e.g., "交易系统 E0382") | **MUST use negotiation** |
-| Ambiguous scope (e.g., "tokio 性能") | **SHOULD use negotiation** |
+|"", "", "compare", "vs", "versus"| **MUST use negotiation** |
+|"", "best practice"| **MUST use negotiation** |
+|Domain + error (e.g., " E0382")| **MUST use negotiation** |
+|Ambiguous scope (e.g., "tokio ")| **SHOULD use negotiation** |
 
 **When negotiation is required, include:**
 
@@ -104,7 +104,7 @@ Layer 1: Language Mechanics (HOW)
 **Disclosed Gaps:** [Gaps user should know]
 ```
 
-> **详细协议见:** `patterns/negotiation.md`
+> **:** `patterns/negotiation.md`
 
 ---
 

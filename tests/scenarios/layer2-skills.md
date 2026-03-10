@@ -7,15 +7,14 @@
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `newtype pattern` | m05-type-driven | wrapper, type safety |
-| `PhantomData 用法` | m05-type-driven | marker, lifetime |
+|`PhantomData `| m05-type-driven | marker, lifetime |
 | `type state pattern` | m05-type-driven | state machine, compile-time |
-| `零大小类型 ZST` | m05-type-driven | zero-sized, marker |
 
 ### Test Commands
 
 ```bash
 claude -p "newtype pattern"
-claude -p "PhantomData 用法"
+claude -p "PhantomData "
 ```
 
 ---
@@ -25,15 +24,14 @@ claude -p "PhantomData 用法"
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `DDD in Rust` | m09-domain | aggregate, entity |
-| `domain model 设计` | m09-domain | value object, repository |
-| `领域建模` | m09-domain | bounded context |
+|`domain model `| m09-domain | value object, repository |
 | `aggregate root` | m09-domain | invariant, consistency |
 
 ### Test Commands
 
 ```bash
 claude -p "DDD in Rust"
-claude -p "领域建模"
+claude -p ""
 ```
 
 ---
@@ -42,16 +40,15 @@ claude -p "领域建模"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `Rust 性能优化` | m10-performance | profiling, bottleneck |
-| `benchmark 怎么写` | m10-performance | criterion, bench |
-| `criterion 用法` | m10-performance | black_box, throughput |
-| `零拷贝 zero copy` | m10-performance | Cow, bytes |
+|`benchmark `| m10-performance | criterion, bench |
+|`criterion `| m10-performance | black_box, throughput |
+|` zero copy`| m10-performance | Cow, bytes |
 
 ### Test Commands
 
 ```bash
-claude -p "Rust 性能优化"
-claude -p "benchmark 怎么写"
+claude -p "Rust "
+claude -p "benchmark "
 ```
 
 ---
@@ -60,16 +57,15 @@ claude -p "benchmark 怎么写"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `推荐什么 crate` | m11-ecosystem | crates.io, popularity |
-| `依赖选择` | m11-ecosystem | maintenance, features |
-| `Cargo.toml 依赖管理` | m11-ecosystem | version, workspace |
-| `feature flags 用法` | m11-ecosystem | optional, cfg |
+|` crate`| m11-ecosystem | crates.io, popularity |
+|`Cargo.toml `| m11-ecosystem | version, workspace |
+|`feature flags `| m11-ecosystem | optional, cfg |
 
 ### Test Commands
 
 ```bash
-claude -p "推荐什么 crate"
-claude -p "feature flags 用法"
+claude -p "crate"
+claude -p "feature flags "
 ```
 
 ---
@@ -79,15 +75,14 @@ claude -p "feature flags 用法"
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
 | `RAII pattern` | m12-lifecycle | Drop, scope |
-| `Drop trait 实现` | m12-lifecycle | destructor, cleanup |
-| `资源释放顺序` | m12-lifecycle | drop order, field |
-| `scopeguard 用法` | m12-lifecycle | defer, guard |
+|`Drop trait `| m12-lifecycle | destructor, cleanup |
+|`scopeguard `| m12-lifecycle | defer, guard |
 
 ### Test Commands
 
 ```bash
 claude -p "RAII pattern"
-claude -p "Drop trait 实现"
+claude -p "Drop trait "
 ```
 
 ---
@@ -96,16 +91,14 @@ claude -p "Drop trait 实现"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `retry 策略` | m13-domain-error | backoff, exponential |
-| `circuit breaker 实现` | m13-domain-error | state, threshold |
-| `错误恢复模式` | m13-domain-error | fallback, graceful |
-| `错误分类处理` | m13-domain-error | transient, permanent |
+|`retry `| m13-domain-error | backoff, exponential |
+|`circuit breaker `| m13-domain-error | state, threshold |
 
 ### Test Commands
 
 ```bash
-claude -p "retry 策略"
-claude -p "circuit breaker 实现"
+claude -p "retry "
+claude -p "circuit breaker "
 ```
 
 ---
@@ -114,16 +107,14 @@ claude -p "circuit breaker 实现"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `怎么学 Rust` | m14-mental-model | ownership, mindset |
-| `Rust 思维方式` | m14-mental-model | borrow checker, mental model |
-| `从 Java 转 Rust` | m14-mental-model | comparison, transition |
-| `为什么 Rust 这样设计` | m14-mental-model | rationale, philosophy |
+|` Rust`| m14-mental-model | ownership, mindset |
+|` Java Rust`| m14-mental-model | comparison, transition |
 
 ### Test Commands
 
 ```bash
-claude -p "怎么学 Rust"
-claude -p "Rust 思维方式"
+claude -p "Rust"
+claude -p "Rust "
 ```
 
 ---
@@ -132,16 +123,15 @@ claude -p "Rust 思维方式"
 
 | Query | Expected Skill | Expected Elements |
 |-------|----------------|-------------------|
-| `常见 Rust 错误` | m15-anti-pattern | pitfall, mistake |
 | `code smell Rust` | m15-anti-pattern | refactor, improve |
-| `Rust 反模式` | m15-anti-pattern | avoid, better |
-| `clone 滥用` | m15-anti-pattern | unnecessary, performance |
+|`Rust `| m15-anti-pattern | avoid, better |
+|`clone `| m15-anti-pattern | unnecessary, performance |
 
 ### Test Commands
 
 ```bash
-claude -p "常见 Rust 错误"
-claude -p "clone 滥用"
+claude -p "Rust "
+claude -p "clone "
 ```
 
 ---

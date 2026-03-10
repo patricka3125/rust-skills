@@ -278,8 +278,8 @@ unsafe {
 | Concurrency | async, await, Send, Sync, thread, spawn |
 | Smart Pointers | Box, Rc, Arc, RefCell, Cell, Mutex |
 | Domains | Web API, HTTP, axum, payment, trading, CLI |
-| Chinese | 所有权, 借用, 生命周期, 异步, 并发, 智能指针 |
-| Questions | how to, why, what is, 怎么, 为什么, 如何 |
+| Chinese |, , , , ,|
+| Questions |how to, why, what is, , ,|
 
 ### Hook Behavior
 

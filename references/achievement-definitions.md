@@ -31,7 +31,7 @@ Complete list of all achievements with unlock requirements.
 | `bug_slayer` | Bug Slayer | ⚔️ | Fix 50 bugs | Expert bug fixer |
 | `bug_terminator` | Bug Terminator | 🤖 | Fix 100 bugs | Legendary debugger |
 
-**Detection:** Commits/edits containing keywords: `fix`, `bug`, `修复`, `patch`, `resolve`
+**Detection:** Commits/edits containing keywords: `fix`, `bug`, ``, `patch`, `resolve`
 
 ---
 
@@ -116,7 +116,7 @@ Complete list of all achievements with unlock requirements.
 | `code_cleaner` | Code Cleaner | 🧹 | 5 refactors | Improving code quality |
 | `architect` | Architect | 🏛️ | 25 refactors | Master of code structure |
 
-**Detection:** Commits/edits containing: `refactor`, `重构`, `clean`, `extract`, `rename`
+**Detection:** Commits/edits containing: `refactor`, ``, `clean`, `extract`, `rename`
 
 ---
 
@@ -128,7 +128,7 @@ Complete list of all achievements with unlock requirements.
 | `knowledge_seeker` | Knowledge Seeker | 🎓 | Ask 50 questions | Dedicated to learning |
 | `rust_scholar` | Rust Scholar | 🎖️ | Ask 100 questions | Deep Rust knowledge |
 
-**Detection:** Questions containing Rust-related keywords: `rust`, `cargo`, `借用`, `所有权`, `lifetime`, `trait`, `async`, `tokio`
+**Detection:** Questions containing Rust-related keywords: `rust`, `cargo`, ``, ``, `lifetime`, `trait`, `async`, `tokio`
 
 ---
 

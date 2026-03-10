@@ -11,32 +11,24 @@ Heavy-weight security and safety audit using os-checker tools.
 ## Parameters
 
 - `mode` (optional): Audit mode
-  - `security` - 安全漏洞审计 (default)
-  - `safety` - unsafe 代码安全性审计
-  - `concurrency` - 并发问题审计
-  - `full` - 完整审计（所有检查器）
+  - `security` - (default)
+  - `safety` - unsafe
+  - `concurrency` -
+  - `full` -
 
 ## When to Use
 
-| 场景 | 推荐 |
 |------|------|
-| 日常开发 | 用 `/rust-review` (clippy) |
-| PR 审查 | 用 `/rust-review` |
-| **发布前** | `/audit security` |
-| **unsafe 代码审查** | `/audit safety` |
-| **并发代码审查** | `/audit concurrency` |
-| **安全关键项目** | `/audit full` |
+|**unsafe **| `/audit safety` |
 
 ## Audit Modes
 
 ### Security (Default)
 
-检查已知安全漏洞：
 
-| 工具 | 检查内容 |
 |------|----------|
-| `cargo audit` | 依赖中的 CVE |
-| `geiger` | unsafe 代码暴露统计 |
+| `cargo audit` |CVE|
+| `geiger` |unsafe|
 
 ```bash
 cargo audit
@@ -45,53 +37,48 @@ cargo geiger
 
 ### Safety
 
-检查 unsafe 代码的正确性：
+unsafe
 
-| 工具 | 检查内容 |
 |------|----------|
 | `miri` | Undefined Behavior |
-| `rudra` | 内存安全问题 |
-| `geiger` | unsafe 统计 |
+| `rudra` | |
+| `geiger` |unsafe|
 
 ```bash
 cargo +nightly miri test
-# rudra 需要专门安装
+# rudra
 ```
 
-**注意**: 需要 nightly toolchain
+****: nightly toolchain
 
 ### Concurrency
 
-检查并发问题：
 
-| 工具 | 检查内容 |
 |------|----------|
-| `lockbud` | 死锁检测 |
-| `atomvchecker` | 原子性违规 |
+| `lockbud` | |
+| `atomvchecker` | |
 
 ### Full
 
-运行所有可用检查器（最慢）。
 
 ## Integration with os-checker Skills
 
-审计时会参考以下 skills：
+skills
 
-| Skill | 用途 |
+| Skill | |
 |-------|------|
-| `os-checker-checkers` | 了解每个工具的功能 |
-| `os-checker-cli` | os-checker 命令用法 |
-| `os-checker-diagnostics` | 解读审计结果 |
-| `os-checker-setup` | 安装检查工具 |
+| `os-checker-checkers` | |
+| `os-checker-cli` |os-checker|
+| `os-checker-diagnostics` | |
+| `os-checker-setup` | |
 
 ## Issue Prioritization
 
-| 优先级 | 诊断类型 | 处理 |
 |--------|----------|------|
-| Critical | `Miri`, `Rudra`, `Audit`, `Cargo` | 立即修复 |
-| High | `Lockbud(Probably)`, `Semver Violation` | 应该修复 |
-| Medium | `Lockbud(Possibly)`, `Atomvchecker` | 需审查 |
-| Low | `Geiger`, `Outdated` | 参考信息 |
+| Critical | `Miri`, `Rudra`, `Audit`, `Cargo` | |
+| High | `Lockbud(Probably)`, `Semver Violation` | |
+| Medium | `Lockbud(Possibly)`, `Atomvchecker` | |
+| Low | `Geiger`, `Outdated` | |
 
 ## Example Output
 
@@ -141,10 +128,9 @@ cargo install os-checker
 
 ## Batch Audit (Multiple Repos)
 
-使用 os-checker 进行批量审计：
+os-checker
 
 ```bash
-# 创建配置
 cat > audit-config.json << 'EOF'
 {
   "org/repo1": {},
@@ -153,12 +139,11 @@ cat > audit-config.json << 'EOF'
 }
 EOF
 
-# 批量运行
 os-checker run --config audit-config.json --emit results.json
 ```
 
 ## Related Commands
 
-- `/rust-review` - 轻量级日常检查 (clippy)
-- `/unsafe-check` - unsafe 代码静态检查
-- `/unsafe-review` - 交互式 unsafe 审查
+- `/rust-review` - (clippy)
+- `/unsafe-check` - unsafe
+- `/unsafe-review` - unsafe

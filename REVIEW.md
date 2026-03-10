@@ -146,44 +146,36 @@ m07-concurrency: E0277 (only for Send/Sync)
 ## Ownership (m01)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-| "我遇到了 E0382 错误" | m01-ownership | E0382 |
 | "value moved after use" | m01-ownership | value moved |
-| "借用检查器报错" | m01-ownership | 借用 |
-| "lifetime 怎么标注" | m01-ownership | lifetime |
+|"lifetime "| m01-ownership | lifetime |
 
 ## Error Handling (m06)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-| "什么时候用 panic" | m06-error-handling | panic |
 | "Result vs Option" | m06-error-handling | Result, Option |
-| "thiserror 怎么用" | m06-error-handling | thiserror |
+|"thiserror "| m06-error-handling | thiserror |
 
 ## Concurrency (m07)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
 | "cannot be sent between threads" | m07-concurrency | sent between threads |
-| "async await 怎么用" | m07-concurrency | async await |
+|"async await "| m07-concurrency | async await |
 | "tokio spawn" | m07-concurrency + rust-learner | tokio, spawn |
 
 ## Unsafe (unsafe-checker)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-| "如何写安全的 unsafe" | unsafe-checker | unsafe |
-| "FFI 绑定怎么写" | unsafe-checker | FFI |
-| "SAFETY 注释" | unsafe-checker | SAFETY |
+|"SAFETY "| unsafe-checker | SAFETY |
 
 ## Version/Crate (rust-learner)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-| "tokio 最新版本" | rust-learner | 最新版本 |
-| "Rust 1.85 有什么新特性" | rust-learner | Rust 1.85, 新特性 |
-| "serde 文档" | rust-learner | 文档 |
+|"tokio "| rust-learner | |
+|"serde "| rust-learner | |
 
 ## Router (rust-router)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
-| "分析这个问题的意图" | rust-router | 意图分析 |
-| "这是什么类型的问题" | rust-router | 分析 |
 ```
 
 ### Test Script
@@ -193,12 +185,11 @@ m07-concurrency: E0277 (only for Send/Sync)
 # test-triggers.sh
 
 queries=(
-  "我遇到了 E0382 错误"
-  "tokio 最新版本"
-  "async await 怎么用"
-  "unsafe 代码怎么写"
-  "什么时候用 panic"
-  "Arc 和 Rc 区别"
+  "tokio "
+  "async await "
+  "unsafe "
+  "panic"
+  "Arc Rc "
 )
 
 for q in "${queries[@]}"; do

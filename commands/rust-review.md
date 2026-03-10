@@ -14,22 +14,18 @@ Lightweight Rust code review using clippy.
 
 ## What It Does
 
-运行 `cargo clippy` 进行代码审查：
+`cargo clippy`
 
-| 检查类型 | 说明 |
 |----------|------|
-| `clippy::correctness` | 明确错误的代码 |
-| `clippy::suspicious` | 可疑代码 |
-| `clippy::complexity` | 过于复杂的代码 |
-| `clippy::perf` | 性能问题 |
-| `clippy::style` | 风格问题 |
+| `clippy::correctness` | |
+| `clippy::suspicious` | |
+| `clippy::complexity` | |
+| `clippy::perf` | |
+| `clippy::style` | |
 
 ## Workflow
 
-1. **读取代码** - 分析目标文件/目录
-2. **运行 clippy** - `cargo clippy --message-format=json`
-3. **分析结果** - 按严重程度分类
-4. **提供修复建议** - 代码示例
+2. **clippy** - `cargo clippy --message-format=json`
 
 ## Example Output
 
@@ -61,7 +57,7 @@ WARNING (2):
 
 ## Clippy Configuration
 
-项目可通过 `clippy.toml` 或 `Cargo.toml` 配置 clippy：
+`clippy.toml` `Cargo.toml` clippy
 
 ```toml
 # Cargo.toml
@@ -72,17 +68,16 @@ expect_used = "warn"
 
 ## NOT Included
 
-以下检查**不在** `/rust-review` 范围内：
+**** `/rust-review`
 
-| 检查 | 原因 | 替代命令 |
 |------|------|----------|
-| `cargo fmt` | 部分项目不支持 | 手动运行 |
-| `miri` | 太重，需要 nightly | `/audit safety` |
-| `cargo audit` | 安全审计场景 | `/audit security` |
-| `lockbud` | 专用并发审计 | `/audit concurrency` |
+| `cargo fmt` | | |
+| `miri` |nightly| `/audit safety` |
+| `cargo audit` | | `/audit security` |
+| `lockbud` | | `/audit concurrency` |
 
 ## Related Commands
 
-- `/audit` - 重量级安全审计（使用 os-checker）
-- `/unsafe-check` - 专注 unsafe 代码检查
-- `/guideline` - 查询编码规范
+- `/audit` - os-checker
+- `/unsafe-check` - unsafe
+- `/guideline` -

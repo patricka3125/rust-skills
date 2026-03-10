@@ -284,7 +284,7 @@ Nested structures (`skills/domains/web/`) won't be registered.
 Skills need comprehensive trigger keywords:
 - Error codes (E0382, E0597)
 - English terms (ownership, borrow)
-- Chinese terms (所有权, 借用)
+- Chinese terms ()
 - Domain terms (Web API, axum)
 
 ### 7. Examples Are Essential
