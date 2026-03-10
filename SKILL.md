@@ -69,6 +69,7 @@ Layer 1: Language Mechanics (HOW)
 | CLI, terminal, clap | m07-concurrency | **domain-cli** |
 | kubernetes, grpc, microservice | m07-concurrency | **domain-cloud-native** |
 | embedded, no_std, MCU | m02-resource | **domain-embedded** |
+| MCP server, MCP client, rmcp, model context protocol | m07-concurrency | **rmcp-mcp** |
 
 ---
 
@@ -152,6 +153,7 @@ pedantic = "warn"
 | mental model, how to think | m14-mental-model |
 | anti-pattern, common mistake, pitfall | m15-anti-pattern |
 | unit test, assertion, test runner, fixture, mock | rust-unit-test |
+| MCP, rmcp, ServerHandler, tool_router, tool_handler | rmcp-mcp |
 
 ## Layer 3 Skills (Domain Constraints)
 
@@ -164,6 +166,7 @@ pedantic = "warn"
 | web server, HTTP, REST, axum, actix | domain-web |
 | CLI, command line, clap, terminal | domain-cli |
 | no_std, microcontroller, firmware | domain-embedded |
+| MCP server, MCP client, model context protocol, rmcp | rmcp-mcp |
 
 ---
 
@@ -199,6 +202,7 @@ pedantic = "warn"
 | unsafe code, FFI | **unsafe-checker** | Read skill |
 | code review | **os-checker** | See `integrations/os-checker.md` |
 | unit test, #[test], assert, claims, nextest, mock, fixture | **rust-unit-test** | Read skill |
+| MCP server, MCP client, rmcp, model context protocol, tool_router, ServerHandler | **rmcp-mcp** | Read skill |
 
 ---
 
@@ -220,6 +224,7 @@ pedantic = "warn"
 | `crate` | **rust-learner** for version, **m11** for integration |
 | `tokio` | **tokio-*** for API, **m07** for concepts |
 | `test` | **rust-unit-test** for testing, **m07** for `tokio::test` concepts |
+| `MCP` | **rmcp-mcp** for server/client building, **domain-web** for HTTP layer |
 
 **Priority Hierarchy:**
 
@@ -241,3 +246,4 @@ pedantic = "warn"
 | `examples/workflow.md` | Workflow examples |
 | `integrations/os-checker.md` | OS-Checker integration |
 | `skills/rust-unit-test/SKILL.md` | Unit testing: claims, nextest, tokio::test, rstest, mockall |
+| `skills/rmcp-mcp/SKILL.md` | MCP server/client with rmcp: tools, resources, prompts, transports |
