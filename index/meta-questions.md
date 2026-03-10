@@ -95,4 +95,4 @@ m[XX][YYY][ZZZZZ]
 
 | File | Purpose |
 |------|---------|
-| [../skills/rust-router/SKILL.md](../skills/rust-router/SKILL.md) | Uses meta-questions for routing decisions |
+| [../SKILL.md](../SKILL.md) | Uses meta-questions for routing decisions |

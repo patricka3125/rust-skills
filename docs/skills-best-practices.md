@@ -34,7 +34,7 @@ description: |
 ---
 
 
-rust-router
+rust-guru
 
 
 **Skill **
@@ -42,7 +42,7 @@ rust-router
 ```
 → Claude skills description
          → skills
-         → rust-router /fallback
+         → rust-guru /fallback
 ```
 
 

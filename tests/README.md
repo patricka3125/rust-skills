@@ -14,7 +14,7 @@ tests/
 │   ├── layer2-skills.md    # m05, m09-m15 design skills
 │   ├── domain-skills.md    # Layer 3 domain skills
 │   ├── unsafe.md           # unsafe-checker tests
-│   ├── routing.md          # rust-router tests
+│   ├── routing.md          # rust-guru tests
 │   └── agents.md           # Agent integration tests
 │
 ├── pressure-scenarios/     # Edge case tests
@@ -95,7 +95,7 @@ claude -p "tokio " # rust-learner
 - domain-ml
 
 ### 4. Core Skills
-- rust-router
+- rust-guru
 - rust-learner
 - coding-guidelines
 - unsafe-checker

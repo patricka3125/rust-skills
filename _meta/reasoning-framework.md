@@ -235,4 +235,4 @@ Bad: "Use Arc<Mutex<T>>" (didn't ask about domain constraints)
 
 | File | Purpose |
 |------|---------|
-| [../skills/rust-router/SKILL.md](../skills/rust-router/SKILL.md) | Master routing logic |
+| [../SKILL.md](../SKILL.md) | Master routing logic |

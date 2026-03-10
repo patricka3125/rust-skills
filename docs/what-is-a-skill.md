@@ -40,7 +40,7 @@ Skill = Routing Logic
 **What it does**: Classifies the problem and determines which thinking mode to activate.
 
 ```
-rust-router:
+rust-guru:
   "E0382" → Layer 1 entry → m01-ownership
   "Web API" → Layer 3 context → domain-web
   "How to design" → Layer 2 question → m09-domain
@@ -155,7 +155,7 @@ These are not "domain knowledge" but **domain constraint systems**.
 **Purpose**: Meta-level routing that orchestrates other skills.
 
 ```
-rust-router:
+rust-guru:
   1. Identify entry layer
   2. Detect domain context
   3. Load appropriate skills
@@ -185,8 +185,8 @@ Claude's thinking:
 User: "Web API reports Rc cannot be sent"
 
 Skill-guided thinking:
-  → rust-router: Detect "Web API" → Load domain-web
-  → rust-router: Detect "Send" error → Load m07-concurrency
+  → rust-guru: Detect "Web API" → Load domain-web
+  → rust-guru: Detect "Send" error → Load m07-concurrency
   → m07-concurrency: "Don't just fix, trace UP"
   → domain-web: "Handlers run on any thread" (constraint)
   → domain-web: "Rc in state" is Common Mistake (validation)
@@ -321,7 +321,7 @@ Result: Right design for this domain
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                  rust-router                     │
+│                  rust-guru                     │
 │         (Cognitive Traffic Controller)           │
 └─────────────────┬───────────────────────────────┘
                   │

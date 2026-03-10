@@ -21,7 +21,7 @@ pedantic = "warn"
 
 ## Core Skills
 
-### rust-router
+### rust-guru
 Master router for ALL Rust questions. Handles:
 - Intent analysis and question routing
 - Cross-cutting Rust topics

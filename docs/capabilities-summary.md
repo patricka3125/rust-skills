@@ -63,7 +63,7 @@ User Question
          │
          ▼
 ┌─────────────────┐
-│ rust-router     │ ← Identifies entry layer + domain
+│ rust-guru     │ ← Identifies entry layer + domain
 └────────┬────────┘
          │
     ┌────┴────┐
@@ -132,7 +132,7 @@ User Question
 
 | Skill | Purpose |
 |-------|---------|
-| **rust-router** | Routes ALL Rust questions, implements meta-cognition |
+| **rust-guru** | Routes ALL Rust questions, implements meta-cognition |
 | **rust-learner** | Fetches latest Rust/crate versions via agents |
 | **coding-guidelines** | 80+ Rust coding rules (naming, style, patterns) |
 | **unsafe-checker** | 47 unsafe rules, SAFETY comments, FFI review |
@@ -173,7 +173,7 @@ User Question
 
 | Command | Purpose |
 |---------|---------|
-| `/rust-router` | Route question to appropriate skill |
+| `/rust-guru` | Route question to appropriate skill |
 | `/guideline [--clippy] rule` | Query coding guidelines |
 | `/skill-index category` | Search skills by category |
 | `/docs crate [item]` | Fetch API documentation |

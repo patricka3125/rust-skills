@@ -104,7 +104,7 @@ git clone https://github.com/ZhangHanDong/rust-skills.git
 cp -r rust-skills/skills/* ~/.claude/skills/
 ```
 
-> **Note**: Skills-only mode does not include hooks, so meta-cognition won't trigger automatically. You can manually call `/rust-router` or specific skills. Background agents fall back to inline execution automatically.
+> **Note**: Skills-only mode does not include hooks, so meta-cognition won't trigger automatically. You can manually call `/rust-guru` or specific skills. Background agents fall back to inline execution automatically.
 
 ---
 
@@ -219,7 +219,7 @@ Layer 1: Language Mechanics (HOW)
 ## Skills Overview
 
 ### Core Skills
-- `rust-router` - Master router for all Rust questions (invoked first)
+- `rust-guru` - Master router for all Rust questions (invoked first)
 - `rust-learner` - Fetch latest Rust/crate version info
 - `coding-guidelines` - Coding conventions lookup
 
@@ -303,7 +303,7 @@ User Question
      │
      ▼
 ┌─────────────────────────────────────────┐
-│           rust-router                    │
+│           rust-guru                    │
 │  Identify entry layer + domain           │
 │  Decision: dual-skill loading            │
 └─────────────────────────────────────────┘

@@ -1,6 +1,6 @@
 # Workflow Examples
 
-> rust-router
+> rust-guru
 
 ## Example 1: Error Code with Domain Context
 

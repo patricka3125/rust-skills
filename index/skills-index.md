@@ -36,7 +36,7 @@ Complete index of all rust-skills with descriptions.
 
 | Name | Description | Key Triggers |
 |------|-------------|--------------|
-| rust-router | Master router for ALL Rust questions | Rust, cargo, rustc, crate, error codes |
+| rust-guru | Master router for ALL Rust questions | Rust, cargo, rustc, crate, error codes |
 | rust-learner | Rust version and crate information | version, changelog, crate info |
 | coding-guidelines | Code style and best practices | style, naming, clippy, formatting |
 | unsafe-checker | Unsafe code review and FFI guidance | unsafe, FFI, raw pointer, transmute |
@@ -102,4 +102,4 @@ Complete index of all rust-skills with descriptions.
 
 | File | Purpose |
 |------|---------|
-| [../skills/rust-router/SKILL.md](../skills/rust-router/SKILL.md) | Master routing logic with priority rules |
+| [../SKILL.md](../SKILL.md) | Master routing logic with priority rules |

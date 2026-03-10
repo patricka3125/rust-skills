@@ -169,7 +169,7 @@
 | `rustfmt ` | coding-guidelines |
 | `P.NAM.01` | coding-guidelines |
 
-## Router (rust-router)
+## Router (rust-guru)
 
 | Query | Expected Skill |
 |-------|----------------|

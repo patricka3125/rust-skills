@@ -30,7 +30,7 @@ See `.rust-skills/AGENTS.md` for Rust development guidelines.
 
 This plugin provides Rust development assistance:
 
-- **rust-router**: Master router for all Rust questions
+- **rust-guru**: Master router for all Rust questions
 - **rust-learner**: Rust version and crate information
 - **coding-guidelines**: Code style and best practices
 - **unsafe-checker**: Unsafe code review and FFI guidance

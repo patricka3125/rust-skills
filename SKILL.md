@@ -1,5 +1,5 @@
 ---
-name: rust-router
+name: rust-guru
 description: "CRITICAL: Use for ALL Rust questions including errors, design, and coding.
 HIGHEST PRIORITY for: compare, vs, versus, difference, best practice,
 tokio vs, async-std vs, tokio, async,
@@ -18,7 +18,7 @@ globs: ["**/Cargo.toml", "**/*.rs"]
 
 ---
 
-# Rust Question Router
+# Rust Guru
 
 > **Version:** 2.0.0 | **Last Updated:** 2025-01-22
 >

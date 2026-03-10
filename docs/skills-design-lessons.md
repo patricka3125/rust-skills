@@ -136,7 +136,7 @@ skills/
 ├── domain-web/SKILL.md
 ├── ...
 ├── core-actionbook/SKILL.md   # Utilities
-├── rust-router/SKILL.md       # Router
+├── rust-guru/SKILL.md       # Router
 └── coding-guidelines/SKILL.md # Guidelines
 ```
 
@@ -159,7 +159,7 @@ skills/core-actionbook/SKILL.md
 | Layer 2 (Design) | `m1x-` | m09-domain, m15-anti-pattern |
 | Layer 3 (Domain) | `domain-` | domain-web, domain-fintech |
 | Core utilities | `core-` | core-actionbook, core-dynamic-skills |
-| Other | descriptive | rust-router, coding-guidelines |
+| Other | descriptive | rust-guru, coding-guidelines |
 
 ---
 
@@ -206,7 +206,7 @@ skills/core-actionbook/SKILL.md
 
 ## Meta-Cognition Routing
 
-### Router Skill (rust-router)
+### Router Skill (rust-guru)
 
 The router is the entry point for ALL Rust questions:
 
@@ -360,7 +360,7 @@ Solution: [follows Web best practices]
 
 | File | Purpose |
 |------|---------|
-| `skills/rust-router/SKILL.md` | Main routing logic |
+| `SKILL.md` | Main routing logic |
 | `skills/m0x-*/SKILL.md` | Layer 1 skills |
 | `skills/m1x-*/SKILL.md` | Layer 2 skills |
 | `skills/domain-*/SKILL.md` | Layer 3 skills |

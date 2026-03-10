@@ -6,10 +6,10 @@
 
 | Query Contains | Action |
 |----------------|--------|
-| , , "compare", "vs", "versus", , "difference" | **MUST invoke rust-router FIRST** |
-| , "best practice", , "recommend" | **MUST invoke rust-router FIRST** |
-| Domain keyword + error (e.g., " E0382", "web API Send") | **MUST invoke rust-router FIRST** |
-| Two or more technologies (e.g., "tokio async-std") | **MUST invoke rust-router FIRST** |
+| , , "compare", "vs", "versus", , "difference" | **MUST invoke rust-guru FIRST** |
+| , "best practice", , "recommend" | **MUST invoke rust-guru FIRST** |
+| Domain keyword + error (e.g., " E0382", "web API Send") | **MUST invoke rust-guru FIRST** |
+| Two or more technologies (e.g., "tokio async-std") | **MUST invoke rust-guru FIRST** |
 
 **When negotiation is required, your response MUST include:**
 
@@ -38,7 +38,7 @@
 
 ## CRITICAL: Rust-Router First
 
-**For ANY Rust-related question, ALWAYS invoke `rust-router` skill FIRST.**
+**For ANY Rust-related question, ALWAYS invoke `rust-guru` skill FIRST.**
 
 This is NON-NEGOTIABLE. Do NOT:
 - Use WebSearch for Rust questions
@@ -59,16 +59,16 @@ ANY question containing:
 ```
 User Question
 |  |
-[1] Invoke: Skill(rust-router)
+[1] Invoke: Skill(rust-guru)
 |  |
-[2] Read rust-router content -> Identify category (m01-m15, etc.)
+[2] Read rust-guru content -> Identify category (m01-m15, etc.)
 |  |
 [3] Invoke specialized skill if needed (e.g., m01-ownership)
 |  |
 [4] Answer based on skill knowledge
 ```
 
-## Routing Table (in rust-router)
+## Routing Table (in rust-guru)
 
 | User Intent | Route To |
 |-------------|----------|
@@ -104,7 +104,7 @@ User: "What's new in latest Rust" / "tokio latest version"
 ### Writing Rust Code
 ```
 User: "Help me write an async HTTP server"
--> Invoke: rust-router (identify: async + web)
+-> Invoke: rust-guru (identify: async + web)
 -> Invoke: m07-concurrency + domain-web
 -> Check rust-learner for latest patterns
 -> Write code
@@ -113,7 +113,7 @@ User: "Help me write an async HTTP server"
 ### Error Debugging
 ```
 User: "How to fix E0382"
--> Invoke: rust-router (identify: ownership error)
+-> Invoke: rust-guru (identify: ownership error)
 -> Invoke: m01-ownership
 -> Explain fix patterns
 ```

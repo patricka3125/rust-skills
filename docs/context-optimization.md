@@ -16,14 +16,14 @@ Rust Skills **68%** token
 
 Skill SKILL.md
 
-### rust-router
+### rust-guru
 
 |------|--------|--------|------|
 | Token | ~4,700 | ~2,000 | **~2,700 tokens** |
 
 
 ```
-skills/rust-router/
+skills/
 ├── SKILL.md (8.1KB - )
 ├── patterns/
 │ └── negotiation.md ()
@@ -45,7 +45,7 @@ Claude Code frontmatter `description`
 
 ```yaml
 ---
-name: rust-router
+name: rust-guru
 description: "CRITICAL: Use for ALL Rust questions...
 Triggers on: Rust, cargo, rustc, E0382, E0597..."
 ---
@@ -169,7 +169,7 @@ Cross-Layer Synthesis ()
 Rust
 
 |------|--------|--------|
-| rust-router | 4,700 | 2,000 |
+| rust-guru | 4,700 | 2,000 |
 | skill | 8,000 | 2,500 |
 
 ---
@@ -207,7 +207,7 @@ Rust
 ---
 
 
-- [ ] rust-router
+- [ ] rust-guru
   ```bash
   claude -p "E0382 "
   claude -p "tokio async-std"
@@ -229,7 +229,7 @@ Rust
 
 
 |------|------|---------|
-| 2.0.0 | 2025-01-22 | rust-router (56% ) |
+| 2.0.0 | 2025-01-22 | rust-guru (56% ) |
 | 2.0.4 | 2025-01-22 | 4 skills context: fork (thanks @pinghe) |
 | 2.0.5 | 2025-01-22 | Fork |
 

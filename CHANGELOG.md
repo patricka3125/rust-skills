@@ -161,7 +161,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-#### rust-router Optimization
+#### rust-guru Optimization
 - **56% context reduction** (18.7 KB → 8.1 KB)
 - Moved negotiation details to `patterns/negotiation.md`
 - Moved workflow examples to `examples/workflow.md`
@@ -190,7 +190,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Core Infrastructure
 - Initial release of rust-skills Claude plugin
 - 15 meta-question skills (m01-m15) for Rust learning
-- rust-router for intelligent skill routing
+- rust-guru for intelligent skill routing
 - rust-learner for crate and version information
 
 #### Skills

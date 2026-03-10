@@ -117,4 +117,4 @@ When multiple skills match, use this priority:
 
 | File | Purpose |
 |------|---------|
-| [../skills/rust-router/SKILL.md](../skills/rust-router/SKILL.md) | Implements these routing rules |
+| [../SKILL.md](../SKILL.md) | Implements these routing rules |

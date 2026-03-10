@@ -8,7 +8,7 @@
 
 | Category | Count | Skills |
 |----------|-------|--------|
-| Core | 4 | rust-router, rust-learner, coding-guidelines, unsafe-checker |
+| Core | 4 | rust-guru, rust-learner, coding-guidelines, unsafe-checker |
 | Meta-Questions (m01-m15) | 15 | m01-m15 |
 | Domains | 7 | cloud-native, fintech, web, cli, iot, ml, embedded |
 | Utilities | 4 | agent-browser, actionbook, dynamic-skills, fix-skill-docs |
@@ -173,7 +173,7 @@ m07-concurrency: E0277 (only for Send/Sync)
 | "tokio " | rust-learner |  |
 | "serde " | rust-learner |  |
 
-## Router (rust-router)
+## Router (rust-guru)
 | Query | Expected Skill | Keywords |
 |-------|----------------|----------|
 ```
@@ -209,7 +209,7 @@ done
 - [x] Deduplicate error codes across skills
 - [x] Add missing error codes
 - [x] Create and run trigger tests
-- [x] Update rust-router routing table
+- [x] Update rust-guru routing table
 
 ## Changes Made
 
@@ -217,5 +217,5 @@ done
 2. **Internal skills** - Removed descriptions from agent-browser, actionbook, dynamic-skills, fix-skill-docs
 3. **Domain naming** - Standardized to domain-xxx prefix (domain-fintech, domain-ml, etc.)
 4. **Error codes** - E0499/E0502 now only in m03-mutability, added E0106/E0271/E0282
-5. **rust-router** - Updated routing tables to reflect all changes
+5. **rust-guru** - Updated routing tables to reflect all changes
 6. **Test script** - Created `test-triggers.sh` for validation

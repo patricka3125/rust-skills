@@ -104,7 +104,7 @@ async fn main() {
 ## Skill Files
 
 For detailed guidance, see:
-- `skills/rust-router/SKILL.md` - Question routing
+- `SKILL.md` - Question routing
 - `skills/coding-guidelines/SKILL.md` - Code style rules
 - `skills/unsafe-checker/SKILL.md` - Unsafe code review
 - `skills/m01-ownership/SKILL.md` - Ownership concepts
