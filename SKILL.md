@@ -151,6 +151,7 @@ pedantic = "warn"
 | domain error, recovery strategy | m13-domain-error |
 | mental model, how to think | m14-mental-model |
 | anti-pattern, common mistake, pitfall | m15-anti-pattern |
+| unit test, assertion, test runner, fixture, mock | rust-unit-test |
 
 ## Layer 3 Skills (Domain Constraints)
 
@@ -197,6 +198,7 @@ pedantic = "warn"
 | code style, naming, clippy | **coding-guidelines** | Read skill |
 | unsafe code, FFI | **unsafe-checker** | Read skill |
 | code review | **os-checker** | See `integrations/os-checker.md` |
+| unit test, #[test], assert, claims, nextest, mock, fixture | **rust-unit-test** | Read skill |
 
 ---
 
@@ -217,6 +219,7 @@ pedantic = "warn"
 | `RAII` | **m12** for design, **m01** for implementation |
 | `crate` | **rust-learner** for version, **m11** for integration |
 | `tokio` | **tokio-*** for API, **m07** for concepts |
+| `test` | **rust-unit-test** for testing, **m07** for `tokio::test` concepts |
 
 **Priority Hierarchy:**
 
@@ -237,3 +240,4 @@ pedantic = "warn"
 | `patterns/negotiation.md` | Negotiation protocol details |
 | `examples/workflow.md` | Workflow examples |
 | `integrations/os-checker.md` | OS-Checker integration |
+| `skills/rust-unit-test/SKILL.md` | Unit testing: claims, nextest, tokio::test, rstest, mockall |
