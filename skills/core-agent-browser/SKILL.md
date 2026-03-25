@@ -1,7 +1,6 @@
 ---
 name: core-agent-browser
-# Internal tool - no description to prevent auto-triggering
-# Used by: rust-learner, docs-researcher, crate-researcher agents
+description: Drive the `agent-browser` CLI for browser automation, page inspection, screenshots, form interaction, and data extraction. Use when actionbook does not have pre-computed selectors, when interactive website testing is required, or when an agent needs direct browser control over navigation and page elements.
 ---
 
 # Browser Automation with agent-browser

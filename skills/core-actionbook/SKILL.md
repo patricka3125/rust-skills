@@ -1,7 +1,6 @@
 ---
 name: core-actionbook
-# Internal tool - no description to prevent auto-triggering
-# Used by: rust-learner agents for pre-computed selectors
+description: Search and retrieve pre-computed browser automation action manuals with page-specific selectors, element metadata, and allowed interaction methods. Use when another skill or agent needs structured selectors for known websites instead of parsing full HTML or discovering controls manually.
 ---
 
 # Actionbook

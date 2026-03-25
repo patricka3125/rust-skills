@@ -1,10 +1,6 @@
 ---
 name: core-fix-skill-docs
-# Internal maintenance tool - no description to prevent auto-triggering
-# Triggered by: /fix-skill-docs command
-argument-hint: "[crate_name] [--check-only]"
-context: fork
-agent: general-purpose
+description: Audit generated crate skills for missing or invalid `references/*.md` documentation files and repair or remove broken references. Use for `/fix-skill-docs`, when a dynamic skill references docs files that do not exist, or when generated Rust crate skills need their documentation set validated and repaired.
 ---
 
 # Fix Skill Documentation

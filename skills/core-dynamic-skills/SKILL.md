@@ -1,10 +1,6 @@
 ---
 name: core-dynamic-skills
-# Command-based tool - no description to prevent auto-triggering
-# Triggered by: /sync-crate-skills, /clean-crate-skills, /update-crate-skill
-argument-hint: "[--force] | <crate_name>"
-context: fork
-agent: general-purpose
+description: Manage dynamically generated crate skills from Rust project dependencies, including syncing missing skills, cleaning generated skills, and updating an individual crate skill. Use for `/sync-crate-skills`, `/clean-crate-skills`, and `/update-crate-skill`, or when a Rust workspace needs local dependency-based skills created from docs.rs content.
 ---
 
 # Dynamic Skills Manager
